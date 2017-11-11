@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:id="@+id/rl_head"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:background="@drawable/my_bg"
+            >
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                android:id="@+id/if_tv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/mar_10"
+                android:layout_marginTop="@dimen/mar_5"
+                android:padding="@dimen/mar_8"
+                android:text="@string/icon_home_msg"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                android:id="@+id/if_tv_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/if_tv_message"
+                android:padding="@dimen/mar_10"
+                android:text="@string/icon_setting"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tv_bubble_msg"
+                style="@style/style_tv_bubble"
+                android:layout_alignRight="@+id/if_tv_message"
+                android:layout_alignTop="@+id/if_tv_message"
+                android:text=" 1 "
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_msg_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_bubble_msg"
+                android:layout_toRightOf="@+id/tv_bubble_msg"
+                android:text="+"
+                android:textColor="@color/app_theme"
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_feedback"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="@dimen/mar_15"-->
+            <!--android:text="@string/feedback" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_set"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:padding="@dimen/mar_15"-->
+            <!--android:text="@string/str_set" />-->
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/mar_15"
+                android:layout_marginTop="40dp" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_head"
+                android:layout_marginLeft="@dimen/mar_15"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/iv_head"
+                android:layout_toRightOf="@+id/iv_head"
+                android:maxEms="12"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                tools:text="@string/nickname" />
+
+            <LinearLayout
+                android:id="@+id/ll_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name"
+                android:layout_alignTop="@+id/tv_authentication"
+                android:layout_toEndOf="@+id/tv_authentication"
+                android:layout_toRightOf="@+id/tv_authentication">
+
+                <TextView
+                    android:id="@+id/tv_vip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mar_3"
+                    android:layout_marginRight="@dimen/mar_3"
+                    android:background="@drawable/button_shape1"
+                    android:padding="@dimen/mar_3"
+                    android:text="@string/text_hui"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_business"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mar_3"
+                    android:layout_marginRight="@dimen/mar_3"
+                    android:background="@drawable/button_shape3"
+                    android:padding="@dimen/mar_3"
+                    android:text="@string/text_sha"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_partner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_shape4"
+                    android:padding="@dimen/mar_3"        android:layout_marginLeft="@dimen/mar_15"
+                    android:layout_marginTop="@dimen/mar_8"
+                    android:text="@string/text_huo"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mar_15"
+                android:layout_below="@id/ll_tip" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="@dimen/mar_15"
+                android:paddingTop="@dimen/mar_15"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/if_tv"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/cord" />
+
+                <TextView
+                    android:id="@+id/tv_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mar_5"
+                    android:layout_toRightOf="@+id/if_tv"
+                    android:text="积分："
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_1"
+                    android:text="0"
+                    android:textColor="@color/colorLightRed" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_authentication"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_head"
+                android:layout_marginLeft="@dimen/mar_15"
+                android:layout_marginTop="@dimen/mar_8"
+                android:layout_toRightOf="@+id/iv_head"
+                android:background="@drawable/button_shape2"
+                android:padding="@dimen/mar_3"
+                android:text="@string/text_shi"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_wait_for_pay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                    android:id="@+id/if_tv_wait_for_pay"
+                    style="@style/if_tv_my_order"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/icon_wait_for_pay_new"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/tv_bubble_wait_for_pay"
+                    style="@style/style_tv_bubble"
+                    android:layout_alignRight="@+id/if_tv_wait_for_pay"
+                    android:layout_alignTop="@+id/if_tv_wait_for_pay"
+                    android:visibility="gone"
+                    tools:text="1" />
+
+                <TextView
+                    android:id="@+id/tv_wait_for_pay_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_bubble_wait_for_pay"
+                    android:layout_toRightOf="@+id/tv_bubble_wait_for_pay"
+                    android:text="+"
+                    android:textColor="@color/app_theme"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_payed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                    android:id="@+id/if_tv_payed"
+                    style="@style/if_tv_my_order"
+                    android:layout_marginTop="@dimen/mar_5"
+                    android:text="@string/icon_wait_for_send_new"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/tv_bubble_payed"
+                    style="@style/style_tv_bubble"
+                    android:layout_alignRight="@+id/if_tv_payed"
+                    android:layout_alignTop="@+id/if_tv_payed"
+                    android:visibility="gone"
+                    tools:text="2" />
+
+                <TextView
+                    android:id="@+id/tv_payed_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_bubble_payed"
+                    android:layout_toRightOf="@+id/tv_bubble_payed"
+                    android:text="+"
+                    android:textColor="@color/app_theme"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_wait_for_get"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                    android:id="@+id/if_tv_wait_for_get"
+                    style="@style/if_tv_my_order"
+                    android:layout_marginTop="@dimen/mar_5"
+                    android:text="@string/icon_wait_for_get_new"
+                    android:textSize="35sp" />
+                <!--<ImageView-->
+                <!--android:id="@+id/if_tv_wait_for_get"-->
+                <!--android:layout_width="45dp"-->
+                <!--android:layout_height="45dp"-->
+                <!--android:padding="@dimen/mar_5"-->
+                <!--android:layout_marginTop="@dimen/mar_5"-->
+
+                <!--android:layout_centerInParent="true"-->
+                <!--android:src="@drawable/wait_receive"-->
+                <!--/>-->
+
+                <TextView
+                    android:id="@+id/tv_bubble_wait_for_get"
+                    style="@style/style_tv_bubble"
+                    android:layout_alignRight="@+id/if_tv_wait_for_get"
+                    android:layout_alignTop="@+id/if_tv_wait_for_get"
+                    android:visibility="gone"
+                    tools:text="99" />
+
+                <TextView
+                    android:id="@+id/tv_wait_for_get_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_bubble_wait_for_get"
+                    android:layout_toRightOf="@+id/tv_bubble_wait_for_get"
+                    android:text="+"
+                    android:textColor="@color/app_theme"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_finished"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                    android:id="@+id/if_tv_finished"
+                    style="@style/if_tv_my_order"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/icon_wait_for_comment_new"
+                    android:textColor="@color/color_font_gray"
+                    android:textSize="35sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_bubble_finished"
+                    style="@style/style_tv_bubble"
+                    android:layout_alignRight="@+id/if_tv_finished"
+                    android:layout_alignTop="@+id/if_tv_finished"
+                    android:visibility="gone"
+                    tools:text="99" />
+
+                <TextView
+                    android:id="@+id/tv_finished_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_bubble_finished"
+                    android:layout_toRightOf="@+id/tv_bubble_finished"
+                    android:text="+"
+                    android:textColor="@color/app_theme"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_all_order"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                    android:id="@+id/if_tv_all_order"
+                    style="@style/if_tv_my_order"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/icon_all_order"
+                    android:textColor="@color/color_font_gray"
+                    android:textSize="35sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_bubble_all_order"
+                    style="@style/style_tv_bubble"
+                    android:layout_alignRight="@+id/if_tv_all_order"
+                    android:layout_alignTop="@+id/if_tv_all_order"
+                    android:visibility="gone"
+                    tools:text="99" />
+
+                <TextView
+                    android:id="@+id/tv_all_order_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_bubble_all_order"
+                    android:layout_toRightOf="@+id/tv_bubble_all_order"
+                    android:text="+"
+                    android:textColor="@color/app_theme"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_order_str"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_order"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_wait_for_pay"
+                style="@style/tv_my_order"
+                android:text="待付款" />
+
+
+            <TextView
+                android:id="@+id/tv_payed"
+                style="@style/tv_my_order"
+                android:text="待发货" />
+
+            <TextView
+                android:id="@+id/tv_wait_for_get"
+                style="@style/tv_my_order"
+                android:text="待收货" />
+
+            <TextView
+                android:id="@+id/tv_finished"
+                style="@style/tv_my_order"
+                android:text="待评价" />
+
+            <TextView
+                android:id="@+id/tv_all_order"
+                style="@style/tv_my_order"
+                android:text="全部订单" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_free_order"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                    android:id="@+id/if_tv_free_order"
+                    style="@style/if_tv_my_order"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/icon_free_speed"
+                    android:textColor="@color/color_font_gray"
+                    android:textSize="35sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_bubble_free_order"
+                    style="@style/style_tv_bubble"
+                    android:layout_alignRight="@+id/if_tv_free_order"
+                    android:layout_alignTop="@+id/if_tv_free_order"
+                    android:visibility="gone"
+                    tools:text="99" />
+
+                <TextView
+                    android:id="@+id/tv_free_order_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_bubble_free_order"
+                    android:layout_toRightOf="@+id/tv_bubble_free_order"
+                    android:text="+"
+                    android:textColor="@color/app_theme"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_invited"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                    android:id="@+id/if_tv_invited"
+                    style="@style/if_tv_my_order"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/icon_invited_new"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/tv_bubble_invited"
+                    style="@style/style_tv_bubble"
+                    android:layout_alignRight="@+id/if_tv_invited"
+                    android:layout_alignTop="@+id/if_tv_invited"
+                    android:visibility="gone"
+                    tools:text="2" />
+
+                <TextView
+                    android:id="@+id/tv_invited_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_bubble_invited"
+                    android:layout_toRightOf="@+id/tv_bubble_invited"
+                    android:text="+"
+                    android:textColor="@color/app_theme"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_up_lv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                    android:id="@+id/if_tv_up_lv"
+                    style="@style/if_tv_my_order"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/mar_3"
+                    android:text="@string/icon_vip_new"
+                    android:textSize="35sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_bubble_up_lv"
+                    style="@style/style_tv_bubble"
+                    android:layout_alignRight="@+id/if_tv_up_lv"
+                    android:layout_alignTop="@+id/if_tv_up_lv"
+                    android:visibility="gone"
+                    tools:text="99" />
+
+                <TextView
+                    android:id="@+id/tv_up_lv_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_bubble_up_lv"
+                    android:layout_toRightOf="@+id/tv_bubble_up_lv"
+                    android:text="+"
+                    android:textColor="@color/app_theme"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_join_shop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                    android:id="@+id/if_tv_join_shop"
+                    style="@style/if_tv_my_order"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/icon_join_shop_new"
+                    android:textColor="@color/color_font_gray"
+                    android:textSize="34sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_bubble_join_shop"
+                    style="@style/style_tv_bubble"
+                    android:layout_alignRight="@+id/if_tv_join_shop"
+                    android:layout_alignTop="@+id/if_tv_join_shop"
+                    android:visibility="gone"
+                    tools:text="99" />
+
+                <TextView
+                    android:id="@+id/tv_join_shop_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_bubble_join_shop"
+                    android:layout_toRightOf="@+id/tv_bubble_join_shop"
+                    android:text="+"
+                    android:textColor="@color/app_theme"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_my_collect"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                    android:id="@+id/if_tv_my_collect"
+                    style="@style/if_tv_my_order"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/icon_collect_new"
+                    android:textColor="@color/color_font_gray"
+                    android:textSize="35sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_bubble_my_collect"
+                    style="@style/style_tv_bubble"
+                    android:layout_alignRight="@+id/if_tv_my_collect"
+                    android:layout_alignTop="@+id/if_tv_my_collect"
+                    android:visibility="gone"
+                    tools:text="99" />
+
+                <TextView
+                    android:id="@+id/tv_my_collect_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_bubble_my_collect"
+                    android:layout_toRightOf="@+id/tv_bubble_my_collect"
+                    android:text="+"
+                    android:textColor="@color/app_theme"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_order"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_free"
+                style="@style/tv_my_order"
+                android:text="赠品进度" />
+
+
+            <TextView
+                android:id="@+id/tv_invited"
+                style="@style/tv_my_order"
+                android:text="邀请有奖" />
+
+            <TextView
+                android:id="@+id/tv_up_lv"
+                style="@style/tv_my_order"
+                android:text="VIP专区" />
+
+            <TextView
+                android:id="@+id/tv_join_shop"
+                style="@style/tv_my_order"
+                android:text="商家加盟" />
+
+            <TextView
+                android:id="@+id/tv_my_collect"
+                style="@style/tv_my_order"
+                android:text="我的收藏" />
+
+        </LinearLayout>
+
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_invite"-->
+        <!--style="@style/rl_my_set"-->
+        <!--android:layout_below="@+id/rl_vip"-->
+        <!--android:layout_marginTop="5dp">-->
+
+        <!--<TextView-->
+        <!--style="@style/tv_my_set"-->
+        <!--android:text="邀请有奖" />-->
+
+        <!--<com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView style="@style/if_tv_my_set" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_vip"-->
+        <!--style="@style/rl_my_set"-->
+        <!--android:layout_below="@+id/rl_collect"-->
+        <!--android:layout_marginTop="1dp">-->
+
+        <!--<TextView-->
+        <!--style="@style/tv_my_set"-->
+        <!--android:text="合伙人专区" />-->
+
+        <!--<com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView style="@style/if_tv_my_set" />-->
+        <!--</RelativeLayout>-->
+
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_apply"-->
+        <!--style="@style/rl_my_set"-->
+        <!--android:layout_below="@+id/rl_collect"-->
+        <!--android:layout_marginTop="1dp">-->
+
+        <!--<TextView-->
+        <!--style="@style/tv_my_set"-->
+        <!--android:text="商家申请" />-->
+
+        <!--<com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView style="@style/if_tv_my_set" />-->
+        <!--</RelativeLayout>-->
+
+
+        <RelativeLayout
+            android:id="@+id/rl_free"
+            style="@style/rl_my_set"
+            android:layout_below="@+id/ll_order_str"
+            android:layout_marginTop="1dp"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/tv_my_set"
+                android:text="我的免单" />
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView style="@style/if_tv_my_set" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_wallet"
+            style="@style/rl_my_set"
+            android:layout_below="@+id/rl_footprint"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/if_tv_my_wallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/mar_15"
+                android:src="@drawable/my_card"
+                android:textColor="@color/colorMyWallet"
+                android:textSize="25sp" />
+
+            <TextView
+                style="@style/tv_my_set1"
+                android:layout_toRightOf="@+id/if_tv_my_wallet"
+                android:text="我的钱包" />
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView style="@style/if_tv_my_set" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_recharge_game"
+            style="@style/rl_my_set"
+            android:layout_below="@+id/rl_footprint"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/game_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/mar_15"
+                android:src="@drawable/game_recharge"
+                android:textColor="@color/colorMyWallet"
+                android:textSize="25sp" />
+
+            <TextView
+                style="@style/tv_my_set1"
+                android:layout_toRightOf="@+id/game_iv"
+                android:text="游戏充值" />
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView style="@style/if_tv_my_set" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_service"
+            style="@style/rl_my_set"
+            android:layout_below="@+id/rl_wallet"
+            android:layout_marginTop="1dp">
+
+            <ImageView
+                android:id="@+id/if_tv_my_server"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/mar_15"
+                android:src="@drawable/my_kefu"
+                android:textSize="25sp" />
+
+            <TextView
+                style="@style/tv_my_set1"
+                android:layout_toRightOf="@+id/if_tv_my_server"
+                android:text="客服帮忙" />
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView style="@style/if_tv_my_set" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_logout"
+            style="@style/rl_my_set"
+            android:layout_below="@+id/rl_logout"
+            android:layout_marginTop="1dp"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/tv_my_set"
+                android:text="退出" />
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView style="@style/if_tv_my_set" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

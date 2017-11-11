@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<include layout="@layout/base_toolbar"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_head" android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/light_red">
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mar_15"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="叮宝商城"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/mar_20">
+
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/alertdiag_bg2"
+            android:id="@+id/rl_acceleration"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/mar_56"
+                    android:layout_height="@dimen/mar_56"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_g" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/mar_10"
+                    android:text="加速齿轮"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="@dimen/mar_25"
+            android:background="@drawable/alertdiag_bg2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/mar_56"
+                    android:layout_height="@dimen/mar_56"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_mo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/mar_10"
+                    android:text="敬请期待"
+                    android:textColor="@color/common_bg2"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/mar_15"
+        android:layout_marginRight="@dimen/mar_15"
+        android:layout_marginTop="30dp"
+        android:background="#337c7c7c" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorDingText"
+        android:layout_margin="@dimen/mar_15"
+        android:textSize="15sp"
+        android:text="何为“加速齿轮”？"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/mar_15"
+        android:lineSpacingExtra="@dimen/mar_5"
+        android:textSize="12sp"
+        android:text="答：平台给VIP会员提供叮宝（积分）奖励活动。平台根据VIP会员的推广业绩奖励相应比例的叮宝。叮宝可购买加速齿轮，进而加快领取获赠商品的速度。（1叮宝可以加速1元的订单）"
+        />
+
+</LinearLayout>

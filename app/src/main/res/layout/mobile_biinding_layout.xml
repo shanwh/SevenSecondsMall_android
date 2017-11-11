@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar"/>
+    <include layout="@layout/toolbar_line"/>
+
+    <RelativeLayout android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <include
+            layout="@layout/title_head_layout"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_size_10"
+            android:paddingTop="@dimen/padding_top"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bindedphone"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/colorBottomBlack"
+                android:padding="52dp"
+                android:text="已绑定:150****3323"/>
+
+
+            <Button
+                android:id="@+id/tobind"
+                android:layout_height="wrap_content"
+                android:layout_width="230dp"
+                android:background="@drawable/round_edittext"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:text="更换手机号"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

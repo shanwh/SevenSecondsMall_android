@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:layout_width="287dp"
+        android:layout_height="226dp"
+        android:src="@drawable/icon_deng"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/icon_get_gift"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:id="@+id/iv"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/iv">
+
+
+        <TextView
+            android:id="@+id/tv_get_money"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:background="@drawable/icon_get_button"
+            android:textColor="#ffea97"
+            android:textSize="14sp"
+            android:layout_marginLeft="@dimen/mar_14"
+            android:text="领取"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar"/>
+    <include layout="@layout/toolbar_line"/>
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent" android:visibility="gone"
+        android:layout_height="48dp"
+        android:background="@color/light_red">
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mar_15"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="会员升级"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="127dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="股东卡会员"
+                android:textColor="#929292"
+                android:textSize="15sp"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/mar_15"
+                android:background="@drawable/alertdiag_bg2"
+                android:paddingBottom="@dimen/mar_13"
+                android:paddingLeft="@dimen/mar_25"
+                android:paddingRight="@dimen/mar_25"
+                android:paddingTop="@dimen/mar_13"
+                android:text="申请升级"
+                android:textColor="@color/app_theme"
+                android:textSize="15sp"
+
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/ll_bottom_tab"
+        android:background="#337c7c7c" />
+    <TextView
+        android:id="@+id/tv_privilege"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mar_25"
+        android:layout_marginRight="@dimen/mar_25"
+        android:lineSpacingExtra="@dimen/mar_3"
+        android:layout_marginTop="@dimen/mar_56"
+        />
+
+    <TextView
+        android:id="@+id/tv_welfare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mar_25"
+        android:layout_marginRight="@dimen/mar_25"
+        android:lineSpacingExtra="@dimen/mar_3"
+        android:layout_marginTop="@dimen/mar_25"
+        />
+</LinearLayout>

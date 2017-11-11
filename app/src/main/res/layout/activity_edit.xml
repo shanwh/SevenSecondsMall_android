@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+<include layout="@layout/base_toolbar"/>
+        <include layout="@layout/title_head_layout" android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_toLeftOf="@+id/delete"
+            android:background="@null"
+            android:padding="@dimen/mar_15"
+            android:hint="请输入新昵称"
+            android:textColor="@color/colorGray2"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:maxEms="12"
+            />
+
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/mar_5"
+            android:text="@string/icon_cancel"
+            android:visibility="invisible"
+            android:padding="@dimen/mar_5"
+            android:textColor="@color/colorGray2"
+            android:textSize="25sp" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mar_90"
+        android:layout_marginRight="@dimen/mar_90"
+        android:layout_marginTop="@dimen/select_width"
+        android:background="@drawable/to_buy_bg"
+        android:gravity="center"
+        android:padding="@dimen/mar_15"
+        android:text="保存信息"
+        android:textColor="@color/white" />
+
+</LinearLayout>

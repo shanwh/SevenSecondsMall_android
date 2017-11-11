@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        android:orientation="vertical">
+
+        <include layout="@layout/base_toolbar"/>
+        <include layout="@layout/toolbar_line"/>
+        <include
+            android:id="@+id/title" android:visibility="gone"
+            layout="@layout/title_head_layout" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/mar_5">
+
+            <ImageView
+                android:id="@+id/icon_loc"
+                android:layout_width="30dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="@dimen/mar_5"
+                android:padding="@dimen/mar_5"
+                android:src="@drawable/location" />
+
+            <TextView
+                android:id="@+id/buyer_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_size_10"
+                android:layout_toRightOf="@+id/icon_loc"
+                android:text="@string/buyer_txt" />
+
+            <TextView
+                android:id="@+id/buyer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mar_5"
+                android:layout_marginTop="@dimen/margin_size_10"
+                android:layout_toRightOf="@+id/buyer_txt"
+                tools:text="齐天大圣" />
+
+            <TextView
+                android:id="@+id/telnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_size_10"
+                android:layout_marginTop="@dimen/margin_size_10"
+                android:layout_toLeftOf="@+id/icon_add"
+                tools:text="13312332112" />
+
+            <TextView
+                android:id="@+id/buyer_add"
+                style="@style/all_wrap"
+                android:layout_below="@+id/buyer_txt"
+                android:layout_marginTop="@dimen/mar_5"
+                android:layout_toLeftOf="@+id/icon_add"
+                android:layout_toRightOf="@+id/icon_loc"
+                android:lineSpacingExtra="@dimen/mar_3"
+                tools:text="@string/add_test" />
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                android:id="@+id/icon_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/mar_5"
+                android:layout_marginRight="15dp"
+                android:rotation="180"
+                android:text="@string/back"
+                android:textSize="13sp" />
+
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/shop_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mar_5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_add"
+            android:layout_marginTop="@dimen/mar_5"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_size_10">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/send_type" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/costprice"
+                    android:text="@string/send_cost" />
+
+                <TextView
+                    android:id="@+id/costprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_size_10"
+                    tools:text="0.00"
+
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_send"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_size_10">
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/buyer_talk" />
+
+                <EditText
+                    android:id="@+id/buyer_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_size_10"
+                    android:layout_toRightOf="@+id/text2"
+                    android:background="@null"
+                    android:hint="@string/tips"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/cost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_edit"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_size_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/a" />
+
+                <TextView
+                    android:id="@+id/counts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/goods" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_size_10"
+                    android:text="@string/culcat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥"
+                    android:textColor="@color/login_red" />
+
+                <TextView
+                    android:id="@+id/howmutch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_size_10"
+                    tools:text=""
+                    android:textColor="@color/login_red" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:layout_below="@+id/cost"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/margin_size_10"
+                android:layout_marginRight="@dimen/margin_size_10"
+                android:layout_marginTop="@dimen/mar_5"
+                android:background="@color/colorGray" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:gravity="center_vertical|end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_cost" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/priceleft"
+                android:textColor="@color/login_red" />
+
+            <TextView
+                android:id="@+id/totalprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="00"
+                android:textColor="@color/login_red" />
+
+            <LinearLayout
+                android:id="@+id/post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_size_10"
+                android:background="@color/app_theme"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_size_10"
+                android:paddingLeft="@dimen/mar_20"
+                android:paddingRight="@dimen/mar_20"
+                android:paddingTop="@dimen/margin_size_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/post_order"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+
+
+

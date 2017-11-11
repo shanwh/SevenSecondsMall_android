@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yidu.sevensecondmall">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.CALL" />
+    <application
+        android:name=".SevenSecondApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:theme="@style/BaseTheme">
+        <meta-data android:name="com.yidu.sevensecondmall.utils.GlideConfiguration"
+            android:value="GlideModule"
+            />
+
+
+        <activity android:name=".Activity.WelcomeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Activity.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/BaseTheme"
+            android:launchMode="singleTask"
+            >
+        </activity>
+        <activity android:name=".Activity.NewMainActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/BaseTheme"
+            android:launchMode="singleTask"
+            >
+        </activity>
+
+        <activity android:name=".Activity.MainActivityCopy"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:launchMode="singleTask"
+            >
+        </activity>
+
+        <activity android:name=".Activity.Distribution.DingCoinRecordActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Distribution.AssignmentBuyActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Distribution.DingOrderActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+        <activity android:name=".Activity.Distribution.TransferActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+        <activity android:name=".Activity.Distribution.TransferDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+        <activity android:name=".Activity.Distribution.AddVelocityDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Distribution.AssignmentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Video.RecordLiveActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Distribution.VipDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Distribution.GoldDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.UserCenter.GameGoldDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.UserCenter.ShareHolderRequestActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.UserCenter.GiftProgressActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.UserCenter.DingShopActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Distribution.MyDingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Distribution.UpLvActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Distribution.TeamPrivilegeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Distribution.DistributionNewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.UserCenter.ShopApplyMsgActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Order.GoodsEstimateExActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+        <activity android:name=".Activity.UserCenter.RechargeGameActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+        <activity android:name=".Activity.WebViewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+        <activity android:name=".Activity.UserCenter.DingRechargeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.UserCenter.UnBindBankCardActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.UserCenter.BalanceRechargeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Order.ApplyReturnActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.UserCenter.VerifyActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.UserCenter.IndentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.UserCenter.ShopApplyActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Order.OrderExActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.UserCenter.InvitedActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+
+        <activity android:name=".Activity.UserCenter.SetPayPasswordActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.UserCenter.PayPasswordActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.UserCenter.BankCardActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.UserCenter.AddBankCardActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.UserCenter.MyMoneyDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.UserCenter.WithdrawActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.UserCenter.RechargeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Video.LiveActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Video.VideoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Distribution.MyRootActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Distribution.BecomeVipActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".QrCode.QrCodeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Distribution.RequestActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Distribution.RecordActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Distribution.MemberListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Distribution.TeamActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Distribution.DistributionActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Distribution.NoDistributionActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Order.OrderDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            />
+
+        <activity
+            android:name=".Activity.UserCenter.SettingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask">
+        </activity>
+
+        <activity
+            android:name=".Activity.UserCenter.PersonIconActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask">
+        </activity>
+
+        <activity android:name=".Activity.UserCenter.EditActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.UserCenter.SelectSexActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.UserCenter.AreaActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.UserCenter.SafeActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            />
+
+
+
+        <activity android:name=".Activity.UserCenter.passwordActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.UserCenter.AddressActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Order.OrderActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Order.TrolleyActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.UserCenter.CollectionActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.UserCenter.MessageActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.UserCenter.LogisticsActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.UserCenter.WalletActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.UserCenter.MyScoreActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.UserCenter.MyMoneyActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.UserCenter.MoneyListActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.UserCenter.setAddressActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".Activity.UserCenter.AboutActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".Activity.UserCenter.allSettingActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".Activity.UserCenter.FeeBackActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".Activity.UserCenter.AdviceActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="standard"/>
+
+        <activity android:name=".Activity.UserCenter.HelperActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".Activity.UserCenter.ReportActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".Activity.UserCenter.BindingActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"/>
+
+        <activity android:name=".Activity.UserCenter.MobileBindingActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"/>
+
+
+
+        <activity android:name=".Activity.Order.GoodsDetailActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Order.OrderSureActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Order.GoodsAttrsActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Order.OrderSuccessActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Login.LoginActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Login.ForgetActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Login.ResigterActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Order.SearchActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Order.GoodsEstimateActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Order.AddCommentsActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            />
+
+        <activity android:name=".Activity.Order.FeeShoppingActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            />
+        <activity android:name=".Activity.Store.StoreHomepageActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            />
+        <activity android:name=".Activity.Store.GoodsClassificationActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            />
+        <activity android:name=".Activity.Store.StoreIntroduceActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            />
+
+
+
+        <uses-library android:name="org.simalliance.openmobileapi" android:required="false"/>
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <activity
+            android:name="com.unionpay.UPPayWapActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!--Image Selector Entry-->
+        <activity
+            android:configChanges="orientation|screenSize"
+            android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity" />
+
+        <!-- start smssdk -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+
+            <intent-filter>
+                <data android:scheme="tencent1105762861" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+
+        </activity>
+        <!-- end smssdk -->
+
+
+        <!--友盟activity声明-->
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false" >
+        </activity>
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+        <activity
+            android:name=".apshare.ShareEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+        <!--<activity android:name="jp.line.android.sdk.activity.LineAuthCompleteActivity"-->
+        <!--android:configChanges="keyboard|orientation"-->
+        <!--android:exported="true"-->
+        <!--android:screenOrientation="sensor">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.VIEW" />-->
+        <!--<category android:name="android.intent.category.DEFAULT" />-->
+        <!--<category android:name="android.intent.category.BROWSABLE" />-->
+        <!--<data android:scheme="line.1471474450" />-->
+        <!--</intent-filter>-->
+        <!--</activity>-->
+
+        <!--<activity android:name="jp.line.android.sdk.activity.WebLoginActivity"-->
+        <!--android:exported="false"-->
+        <!--android:configChanges="keyboard|orientation"-->
+        <!--android:screenOrientation="sensor">-->
+        <!--</activity>-->
+
+        <!-- start 支付宝支付 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <!-- end 支付宝支付 -->
+
+        <!-- 微信支付 -->
+
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--之后此处修改qq-->
+                <data android:scheme="tencent1105762861" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+        <!--此处修改友盟key-->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5858c54082b6356e690009ce" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" >
+        </meta-data>
+        <service android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false"></service>
+
+        <!--极光推送-->
+        <!--极光推送-->
+        <receiver
+            android:name=".JPush.JPushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.yidu.sevensecondmall" />
+            </intent-filter>
+        </receiver>
+        <!--极光推送-->
+
+    </application>
+
+    <!-- Required -->
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="22"
+        tools:overrideLibrary="com.umeng.socialize.evernote,com.umeng.socialize.pinterest"
+        />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!--<uses-permission android:name="Re"-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!--极光推送-->
+    <uses-permission android:name="com.yidu.kingoffootball.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--极光推送-->
+
+    <!--renren sso Permission for Unit Test -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- Needed only if your app targets Android 5.0 (API level 21) or higher. -->
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature android:name="android.hardware.location.network" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD" />
+
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+</manifest>

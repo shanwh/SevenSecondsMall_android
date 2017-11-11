@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tv_sort"
+            android:layout_width="0dp"
+            android:layout_height="23dp"
+            android:layout_marginRight="@dimen/mar_10"
+            android:layout_weight="1"
+            android:background="@drawable/button_shape_grad_5"
+            android:gravity="center"
+            android:text="@string/sort"
+            android:textSize="@dimen/textSize10" />
+
+        <TextView
+            android:id="@+id/tv_sort_sales"
+            android:layout_width="0dp"
+            android:layout_height="23dp"
+            android:layout_marginRight="@dimen/mar_10"
+            android:layout_weight="1"
+            android:background="@drawable/button_shape_grad_5"
+            android:gravity="center"
+            android:text="@string/sort_sales"
+            android:textSize="@dimen/textSize10" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/mar_10"
+            android:layout_weight="1"
+            android:background="@drawable/button_shape_grad_5">
+
+            <TextView
+                android:id="@+id/tv_sort_price"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/sort_price"
+                android:textSize="@dimen/textSize10" />
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/mar_3"
+                android:layout_toRightOf="@id/tv_sort_price"
+                android:text="@string/icon_sorting"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize10" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/mar_10"
+            android:layout_weight="1"
+            android:background="@drawable/button_shape_grad_5">
+
+            <TextView
+                android:id="@+id/tv_sort_custom"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/sort_custom"
+                android:textSize="@dimen/textSize10" />
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv_sort_custom"
+                android:layout_marginLeft="@dimen/mar_3"
+                android:layout_toRightOf="@id/tv_sort_custom"
+                android:text="@string/icon_filter"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize10" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_goods_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:focusableInTouchMode="false"
+    android:paddingTop="15dp">
+
+    <!--<View-->
+    <!--android:id="@+id/line"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/mar_5"-->
+    <!--android:background="@color/colorHomeBackground" />-->
+
+    <RelativeLayout
+        android:id="@+id/rl"  android:paddingLeft="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/goods_pic"
+            android:layout_width="93dp"
+            android:layout_height="93dp"
+            android:layout_below="@+id/line"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_loading_pic" />
+
+        <RelativeLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/goods_pic"
+            android:background="@drawable/home_goods_bg"
+            android:paddingBottom="6dp"
+            android:paddingLeft="11dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/in_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textColor="#5e5e5e"
+                android:textSize="11dp"
+                tools:text="@string/test3" />
+
+            <TextView
+                android:id="@+id/goods_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/in_text"
+                android:layout_marginTop="8dp"
+                android:text=""
+                android:textColor="#5e5e5e"
+                android:textSize="11dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom">
+
+
+                <TextView
+                    android:id="@+id/tv" android:layout_gravity="bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:textColor="#e68a2e"
+                    android:textSize="13dp"
+                    tools:text="¥" />
+
+                <TextView
+                    android:id="@+id/price" android:layout_gravity="bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv"
+                    android:textColor="#e68a2e"
+                    android:textSize="15dp"
+                    tools:text="2725.00" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/goods_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/mar_3"
+                android:text="0人已购买"
+                android:textSize="9sp"
+                android:visibility="gone" />
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontButton
+                android:id="@+id/if_buy_car"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp" android:padding="2dp"
+                android:background="@drawable/cricle_28_car_org" android:gravity="center"
+                android:text="@string/icon_add_cart"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/rl"
+        android:layout_marginTop="15dp"
+        android:background="#e9e9e9" />
+</RelativeLayout>

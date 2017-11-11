@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar"/>
+    <include layout="@layout/toolbar_line"/>
+
+    <RelativeLayout android:visibility="gone"
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/light_red">
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mar_15"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/money_withdraw"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/mar_15">
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView style="@style/if_tv_my_set"
+            android:layout_centerVertical="false"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_card_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="到账银行卡" />
+
+        <TextView
+            android:id="@+id/tv_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mar_15"
+            android:layout_toRightOf="@+id/tv_card_tip"
+            android:text=""
+            android:textColor="@color/colorBlueText" />
+
+        <TextView
+            android:id="@+id/tv_withdraw_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_card_tip"
+            android:layout_marginTop="@dimen/mar_10"
+            android:text="提现金额" />
+
+        <TextView
+            android:id="@+id/tv_count_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_withdraw_tip"
+            android:layout_marginTop="@dimen/mar_10"
+            android:text=""
+            android:textSize="28sp" />
+
+
+        <EditText
+            android:id="@+id/et_count"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:layout_marginLeft="@dimen/mar_5"
+            android:textCursorDrawable="@null"
+            android:layout_marginTop="@dimen/mar_10"
+            android:textColor="@color/colorBottomBlack"
+            android:textColorHint="@color/colorBottomBlack"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textSize="28sp"
+            android:layout_below="@+id/tv_withdraw_tip"
+            android:layout_toRightOf="@+id/tv_count_tip"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_all_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textSize="12dp"
+            android:padding="@dimen/mar_15"
+            tools:text="总金额：¥ "
+
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content" android:text="可提现金额：¥ "        android:padding="@dimen/mar_15" android:textColor="@color/black"
+            android:id="@+id/tv_can_count"  android:textSize="14dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_withdraw_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_all_count" android:textSize="12dp"
+            android:text="全部提现"
+            android:textColor="@color/colorBlueText" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/mar_20"
+        android:layout_marginRight="@dimen/mar_20"
+        android:layout_marginTop="@dimen/mar_20"
+        android:background="@drawable/to_buy_bg"
+        android:gravity="center"
+        android:padding="@dimen/mar_15"
+        android:text="下一步"
+        android:textColor="@color/white" />
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/if_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mar_5"
+            android:padding="@dimen/mar_10"
+            android:text="@string/icon_success"
+            android:textColor="@color/colorGreenFinish"
+            android:textSize="23sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/if_tv"
+            android:text="提现成功"
+            android:textColor="@color/colorGreenFinish" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/rl_finish_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/mar_15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="银行卡" />
+
+        <TextView
+            android:id="@+id/tv_finish_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/mar_15"
+            android:text="工商银行尾号0025"
+            android:textColor="@color/colorBlueText" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_finish_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/mar_15"
+        android:paddingLeft="@dimen/mar_15"
+        android:paddingRight="@dimen/mar_15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金额(元)" />
+
+        <TextView
+            android:id="@+id/tv_finish_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="¥123456" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/order_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_order_id"
+        android:layout_marginTop="@dimen/margin_size_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/mar_8"
+        android:paddingTop="@dimen/mar_15"
+        android:paddingBottom="@dimen/mar_15"
+        android:text="@string/order_id"
+        android:textSize="@dimen/textSize4" />
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_store_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mar_15"
+            android:text="cerroqreen旗舰店" />
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            style="@style/if_tv_normal_12_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/icon_more2"
+            android:layout_toRightOf="@id/tv_store_name" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/mar_15"
+            android:text="待收货" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/hor_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/goods_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/mar_10"
+        android:paddingBottom="@dimen/mar_10"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_total_num"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="@dimen/mar_8"
+            android:text="共1件商品"
+            />
+        <TextView
+            android:id="@+id/tv_pay_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合计: ￥49.90(含运费0.00)"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp">
+
+
+        <TextView
+            android:id="@+id/tv_ship_or_cancel"
+            style="@style/btn_wait_get"
+            android:layout_toLeftOf="@+id/tv_sure_or_cancel"
+            android:text="查看物流" />
+
+        <TextView
+            android:id="@+id/tv_sure_or_cancel"
+            style="@style/btn_wait_get"
+            android:layout_alignParentRight="true"
+            android:text="确认收货" />
+    </RelativeLayout>
+</LinearLayout>

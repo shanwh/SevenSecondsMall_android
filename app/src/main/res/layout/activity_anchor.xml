@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--主播端-->
+    <LinearLayout
+        android:id="@+id/l_name"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_welcome"
+        android:layout_below="@+id/l_name"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+
+
+    <ImageButton
+        android:id="@+id/anchor_home_play"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:background="@drawable/liveplay"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        />
+
+</RelativeLayout>

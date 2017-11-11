@@ -1,0 +1,234 @@
+<resources>
+    <!--<string name="app_name">DING网</string>-->
+    <string name="app_name">DING网</string>
+    <string name="umeng_socialize_sina">新浪</string>
+    <string name="umeng_socialize_text_qq_key">QQ</string>
+    <string name="umeng_socialize_text_qq_zone_key">QQ空间</string>
+    <string name="umeng_socialize_text_weixin_key">微信</string>
+    <string name="umeng_socialize_text_weixin_circle_key">微信朋友圈</string>
+    <string name="umeng_socialize_text_comment_hint">说点什么吧&#8230;</string>
+    <string name="gps">未定位</string>
+    <string name="umeng_socialize_comment" translatable="false">评论</string>
+    <string name="umeng_socialize_near_At" translatable="false">最近\@的好友</string>
+    <string name="umeng_socialize_friends" translatable="false">关注的好友</string>
+    <string name="order">订单</string>
+    <string name="wallet">钱包</string>
+    <string name="collection">收藏</string>
+    <string name="trolley">购物车</string>
+    <string name="setting">设置</string>
+    <string name="loginout">退出</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+    <string name="scan">扫一扫</string>
+    <string name="paycode">收款码</string>
+    <string name="costcode">付款码</string>
+    <string name="scantext">将二维码放入取景框即可自动扫描</string>
+    <string name="headicon">头像</string>
+    <string name="nickname">我的昵称</string>
+    <string name="sex">性别</string>
+    <string name="shopid">商城ID</string>
+    <string name="area">地区</string>
+    <string name="address">我的地址</string>
+    <string name="safeset">安全设置</string>
+    <string name="identify">实名认证</string>
+    <string name="noset">未设置</string>
+    <string name="photo">拍照</string>
+    <string name="selectpic">从手机相册选择</string>
+    <string name="savepic">保存图片</string>
+    <string name="cancel">取消</string>
+    <string name="save">保存</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="locationmyself">定位到您的位置</string>
+    <string name="all">全部</string>
+    <string name="waitforpay">待付款</string>
+    <string name="waitforsend">待发货</string>
+    <string name="waitforget">待收货</string>
+    <string name="finish">已完成</string>
+    <string name="c_baby">收藏的宝贝</string>
+    <string name="c_shop">收藏的店铺</string>
+    <string name="test">2017款夏季防晒大众手工编织帽2313131231231</string>
+    <string name="test2">颜色分类：欧洲潮流，尺寸32</string>
+    <string name="score">积分</string>
+    <string name="left">余额</string>
+    <string name="card">银行卡</string>
+    <string name="notinclude">不含运费</string>
+    <string name="recommend">推荐</string>
+    <string name="hot">热门</string>
+    <string name="news">最新</string>
+    <string name="price">价格</string>
+    <string name="test3"> SAMSUNG 盖世乐 S7</string>
+    <string name="test4"> ￥3725.00</string>
+    <string name="express">快递:</string>
+    <string name="monthsale">月售</string>
+    <string name="test5">山东蓝翔</string>
+    <string name="getscore">积分奖励</string>
+    <string name="getsale">正式会员可获得8折优惠</string>
+    <string name="attribute">属性</string>
+    <string name="selectattrs">选择属性</string>
+    <string name="client">客服</string>
+    <string name="collection1">收藏</string>
+    <string name="addcar">加入购物车</string>
+    <string name="Imbuy">立即购买</string>
+    <string name="buyer_txt">收货人:</string>
+    <string name="add_test">收货地址：深圳市龙华区龙华街道三联路魅力四射文化楼9楼</string>
+    <string name="send_type">配送方式</string>
+    <string name="send_cost">快递费:</string>
+    <string name="buyer_talk">买家留言</string>
+    <string name="tips">选填：对本次交易的说明</string>
+    <string name="a">共</string>
+    <string name="goods">件商品</string>
+    <string name="culcat">小计:</string>
+    <string name="total_cost">合计:</string>
+    <string name="priceleft">￥</string>
+    <string name="post_order">提交订单</string>
+    <string name="test6">购物即送200花点</string>
+    <string name="stock">库存</string>
+    <string name="select">选择套餐</string>
+    <string name="type">型号</string>
+    <string name="howmuch">购买数量</string>
+    <string name="haspay">买家已付款</string>
+    <string name="all_cost">总价:￥</string>
+    <string name="readdetail">查看详情</string>
+    <string name="goback">返回首页</string>
+    <string name="others">第三方登录</string>
+    <string name="signin">登录</string>
+    <string name="forget_pw">忘记密码</string>
+    <string name="signup">注册</string>
+    <string name="inputNum">请输入手机号码</string>
+    <string name="inputpw">请输入密码</string>
+    <string name="inputpw2">请输入6-12位密码</string>
+    <string name="inputpw3">请确认密码</string>
+    <string name="inputpw4">请确认新密码</string>
+    <string name="getCNum">获取验证码</string>
+    <string name="inputCNum">输入验证码</string>
+    <string name="inputNumpw">请输入绑定手机号码号码</string>
+    <string name="inputpwpw">请重新设置6-12位密码</string>
+    <string name="name">浩辰科技</string>
+    <string name="type1">认证会员</string>
+    <string name="all_search">大家都在搜:</string>
+    <string name="id">商城ID</string>
+    <string name="pay_detail">付款详情</string>
+    <string name="pay_type">付款方式</string>
+    <string name="need_pay">需付款</string>
+    <string name="sure_to_pay">确认支付</string>
+    <string name="msg_logistics">交易物流信息</string>
+    <string name="msg">通知消息</string>
+    <string name="test7">订单已签收!您购买的美国辛西娅葡萄驱蚊器二群二群二二群二群二群</string>
+    <string name="test8">您好您还没有进行实名认证制度123131221321</string>
+    <string name="taobao">淘宝微信账号专卖</string>
+    <string name="action_message">活动消息</string>
+    <string name="order_get">订单已签收</string>
+    <string name="balance">余额</string>
+    <string name="pay_ali">支付宝支付</string>
+    <string name="ali">支付宝</string>
+    <string name="buyer_pay_money">买家已付款</string>
+    <string name="order_detail">订单详情</string>
+    <string name="point">花点细名</string>
+    <string name="startpoint">开始花点</string>
+    <string name="in">充值</string>
+    <string name="out">提现</string>
+    <string name="money">余额明细</string>
+    <string name="buyer">收货人</string>
+    <string name="buyer2">收货人    </string>
+    <string name="mobile">手机号码</string>
+    <string name="detailaddress">详细地址</string>
+    <string name="selectaddress">选择地区</string>
+    <string name="postcode">邮政编码</string>
+
+    <!--商品专区分类start-->
+    <string name="str_hot">热销品牌</string>
+    <string name="str_hot_tip">精选品牌，优惠来袭</string>
+
+    <string name="str_privilege">会员专区</string>
+    <string name="str_privilege_tip">专项折扣免运费</string>
+
+    <string name="str_discount">折扣专区</string>
+    <string name="str_discount_tip">给你想不到的优惠</string>
+
+    <string name="str_team_buying">商城拼团</string>
+    <string name="str_team_buying_tip">拼团5折限时开抢</string>
+    <string name="feedback">反馈</string>
+    <string name="str_set">设置</string>
+    <string name="str_team_num">推广团队数：</string>
+    <string name="str_num">团队人数：</string>
+    <string name="str_address">所属地：</string>
+    <string name="str_time">成立日期：</string>
+    <string name="str_id">团队ID：</string>
+    <!--商品专区分类end-->
+
+    <string name="rll_header_hint_ready">松开更新</string>
+    <string name="rll_header_hint_loading">正在努力更新</string>
+    <string name="rll_header_last_time">上次更新时间：</string>
+    <string name="rll_header_time_justnow">刚刚</string>
+    <string name="rll_header_time_minutes">分钟以前</string>
+    <string name="rll_header_time_hours">小时以前</string>
+    <string name="rll_header_time_days">天以前</string>
+    <string name="rll_footer_hint_normal">上拉加载更多</string>
+    <string name="rll_footer_hint_ready">松开加载更多</string>
+    <string name="rll_footer_hint_loading">正在努力加载</string>
+    <string name="rll_footer_no_more_data">没有更多了</string>
+
+    <!--刷新控件-->
+    <dimen name="rll_header_progress_size">32dp</dimen>
+    <dimen name="rll_header_arrow_width">32dp</dimen>
+    <dimen name="rll_header_arrow_height">32dp</dimen>
+    <dimen name="rll_header_title_size">14sp</dimen>
+    <dimen name="rll_header_subtitle_size">15sp</dimen>
+    <dimen name="rll_header_content_margin">12dp</dimen>
+    <dimen name="rll_footer_content_margin">8dp</dimen>
+    <dimen name="rll_footer_progress_size">18dp</dimen>
+    <dimen name="rll_footer_title_size">14sp</dimen>
+
+    <string name="rll_header_hint_normal">下拉更新</string>
+    <string name="tv_scale">请使用首页扫一扫功能</string>
+
+    <!--扫一扫-->
+    <string name="title_activity_scan_qr_code">二维码扫一扫</string>
+    <string name="qc_code_close">关闭</string>
+    <string name="qr_code_select_picture">照片</string>
+    <string name="qr_code_open_flash_light">打开闪光灯</string>
+    <string name="qr_code_close_flash_light">关闭闪光灯</string>
+    <string name="qr_code_auto_scan_notification">将二维码放入框内，即可自动扫描</string>
+    <string name="qr_code_notification">提示</string>
+    <string name="qr_code_camera_not_open">您的相机功能好像没有打开哦~去\"设置>隐私>相机\"设置一下吧</string>
+    <string name="qr_code_positive_button_know">知道了</string>
+    <string name="qr_code_positive_button_confirm">确认</string>
+    <string name="qr_code_could_not_read_qr_code_from_picture">没有读出图片中的链接，换张图片试试吧~</string>
+    <string name="qr_code_could_not_read_qr_code_from_scanner">对不起，无法打开扫出的内容</string>
+    <string name="qr_code_camera_not_found">未检测到相机</string>
+    <string name="money_withdraw">余额提现</string>
+    <string name="money_recharge">余额充值</string>
+    <string name="money_detail">余额明细</string>
+    <string name="money_bank">银行卡</string>
+    <string name="money_add_bank">添加银行卡</string>
+
+    <string name="pay_password">支付密码</string>
+    <string name="set_pay_password">设置支付密码</string>
+    <string name="text_hui">股</string>
+    <string name="text_shi">实</string>
+    <string name="text_sha">商</string>
+    <string name="text_huo">VIP</string>
+
+
+    <string name="str_phone_pay">手机充值</string>
+    <string name="str_movie">电影票</string>
+    <string name="str_white_line">DING白条</string>
+    <string name="str_life_pay">生活缴费</string>
+    <string name="str_buy_air">买机票</string>
+    <string name="str_back_money">信用卡还款</string>
+    <string name="record_title">给直播写个标题吧</string>
+    <string name="record_title2">——会显示在开播推送消息中——</string>
+    <string name="str_evert">翻转</string>
+    <string name="store_testProfile">我店产品全部来自正规的渠道，以最直接有效的方式送达最终端消费者手里，避免了中间过多的流通环节。并且本店一直是以薄利多销为原则，在有合理利润的基础下将尽最大可能让利给大家，所以才会比专柜便宜许多!!</string>
+    <string name="check_all">查看全部</string>
+    <string name="str_store_classification">商品分类</string>
+    <string name="str_store_introduce">店铺详情</string>
+    <string name="sort">综合排序</string>
+    <string name="sort_sales">销量</string>
+    <string name="sort_price">价格</string>
+    <string name="sort_custom">筛选</string>
+    <string name="order_id">订单编号：00211255242</string>
+
+
+</resources>

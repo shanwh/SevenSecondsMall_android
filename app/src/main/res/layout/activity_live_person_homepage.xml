@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="270dp"
+    android:gravity="center_horizontal"
+    android:background="@color/gray_normal"
+    >
+
+    <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+        android:id="@+id/if_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize5"
+        android:textColor="@color/white"
+        android:text="@string/icon_return"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="left"
+        />
+
+    <ImageView
+        android:layout_marginTop="1dp"
+        android:id="@+id/im_photo"
+        android:layout_width="@dimen/head_port_size"
+        android:layout_height="@dimen/head_port_size"
+        android:layout_marginBottom="@dimen/mar_8"/>
+
+    <TextView
+        android:id="@+id/person_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize5"
+        android:textColor="@color/white"
+        android:text="Anna杨洋"
+        android:layout_marginBottom="@dimen/mar_8"
+        />
+
+    <TextView
+        android:id="@+id/fans_number"
+        android:layout_marginBottom="@dimen/mar_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize5"
+        android:textColor="@color/white"
+        android:text="粉丝 :"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_attention"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:paddingRight="13dp"
+        android:paddingLeft="13dp"
+        android:orientation="horizontal"
+        android:background="@drawable/attention_bg_red"
+        android:gravity="center_vertical"
+        >
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/if_tv_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:text="@string/icon_signal_attention"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize5"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/mar_3"
+            />
+
+        <TextView
+            android:id="@+id/tv_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关注"
+            android:textSize="@dimen/textSize5"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar"/>
+    <RelativeLayout
+        android:id="@+id/title" android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/title_head_layout" />
+
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/mar_15"
+            android:paddingTop="@dimen/padding_top"
+            android:text="@string/icon_more"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/bottom_tab"-->
+        <!--style="@style/ll_home_tab"-->
+        <!--android:layout_height="37dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/rl_icon1"-->
+            <!--style="@style/fragment_tab_rl">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_icon1"-->
+                <!--style="@style/fragment_tab_tv_home"-->
+                <!--android:text="@string/c_baby" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/rl_icon2"-->
+            <!--style="@style/fragment_tab_rl">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_icon2"-->
+                <!--style="@style/fragment_tab_tv_home1"-->
+                <!--android:text="@string/c_shop" />-->
+        <!--</RelativeLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/c_viewpager"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/mar_5"
+            android:text="@string/icon_buy_car"
+            android:textColor="@color/colorBottomBlack"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收藏是空的，您可以"
+            android:textColor="@color/colorBottomBlack"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_to_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mar_5"
+            android:background="@drawable/to_buy_bg"
+            android:paddingBottom="@dimen/mar_5"
+            android:paddingLeft="@dimen/mar_7"
+            android:paddingRight="@dimen/mar_7"
+            android:paddingTop="@dimen/mar_5"
+            android:text="随便逛逛"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

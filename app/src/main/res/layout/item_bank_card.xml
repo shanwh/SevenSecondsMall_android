@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/mar_15"
+    android:paddingRight="@dimen/mar_15"
+    android:paddingLeft="@dimen/mar_15"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_item"
+        android:background="@drawable/bank_card_bg">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mar_35"
+            android:layout_margin="@dimen/mar_15"
+            android:scaleType="fitStart"
+            android:layout_toLeftOf="@+id/tv_card_number"
+            android:src="@drawable/combo"
+            />
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_bank_name"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@+id/iv"-->
+            <!--android:layout_marginTop="@dimen/mar_15"-->
+            <!--android:visibility="gone"-->
+            <!--android:text="招商银行"-->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--/>-->
+
+
+        <TextView
+            android:id="@+id/tv_card_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorBottomBlack"
+            android:text="**** **** **** 1234"
+            android:paddingRight="@dimen/mar_15"
+            android:layout_centerVertical="true"
+            />
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginTop="@dimen/mar_15"-->
+            <!--android:paddingRight="@dimen/mar_15"-->
+            <!--android:text="快捷支付"-->
+            <!--android:textColor="@color/colorWhiteTr"-->
+            <!--android:textStyle="italic"-->
+            <!--android:textSize="12sp"-->
+
+            <!--/>-->
+    </RelativeLayout>
+</LinearLayout>

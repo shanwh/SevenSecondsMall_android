@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:visibility="gone"
+        layout="@layout/title_head_layout"/>
+
+    <include layout="@layout/base_toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_report"
+        style="@style/rl_my_set">
+
+        <TextView
+            style="@style/tv_setting"
+            android:textSize="16sp"
+            android:text="在线投诉" />
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView style="@style/if_tv_my_set" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_return"
+        style="@style/rl_my_set">
+
+        <TextView
+            style="@style/tv_setting"
+            android:textSize="16sp"
+            android:text="在线退换" />
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView style="@style/if_tv_my_set" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_feeback"
+        style="@style/rl_my_set">
+
+        <TextView
+            style="@style/tv_setting"
+            android:textSize="16sp"
+            android:text="反馈" />
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView style="@style/if_tv_my_set" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_about"
+        android:layout_marginTop="@dimen/margin_size_10"
+        style="@style/rl_my_set">
+
+        <TextView
+            android:id="@+id/tel_title"
+            style="@style/tv_setting"
+            android:textSize="16sp"
+            android:text="客服电话" />
+
+        <TextView
+            android:layout_toRightOf="@+id/tel_title"
+            style="@style/tv_setting"
+            android:textSize="16sp"
+            android:text="40066 22226" />
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView style="@style/if_tv_my_set" />
+    </RelativeLayout>
+
+</LinearLayout>

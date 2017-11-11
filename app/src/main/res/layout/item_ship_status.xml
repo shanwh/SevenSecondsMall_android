@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_up"
+        android:layout_width="1dp"
+        android:layout_height="12dp"
+        android:layout_marginLeft="25dp"
+        android:background="@color/colorLineGray" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="51dp"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_gravity="center_horizontal"
+                android:layout_width="1dp"
+                android:paddingTop="3dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLineGray" />
+
+            <com.yidu.sevensecondmall.views.widget.widget.CircleInterCircleView
+                android:id="@+id/v_circle_big"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_horizontal"
+                app:InterCircleColor="#27ae60"
+                app:InterCircleWidth="11dp"
+                app:OutCircleColor="#4c27ae60"
+                app:OutCircleWidth="15dp" />
+
+            <View
+                android:id="@+id/iv_circle"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/cricle_gray_dddd"
+                android:visibility="visible" />
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/mar_3"
+                android:maxLines="2"
+                android:text="广东省深圳市宝安区"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize4" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017-08-22 12:00"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/colorLineGray" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

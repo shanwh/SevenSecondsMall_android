@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title" android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/title_head_layout" />
+
+        <TextView
+            android:id="@+id/change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_size_10"
+            android:paddingTop="@dimen/padding_top"
+            android:text="编辑"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/base_toolbar" android:id="@+id/toolbar"/>
+    <include layout="@layout/toolbar_line"/>
+    <LinearLayout
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:layout_centerInParent="true">
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/icon_buy_car"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="购物车是空的，您可以"/>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/red_item">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:text="随便逛逛"/>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/textSize2"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/car_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/total"
+        android:layout_below="@+id/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/select_all"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_size_10"
+            android:orientation="horizontal">
+
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                android:id="@+id/select_state"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/icon_un_select"
+                android:textColor="@color/colorInvitedText"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:text="全选"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_toRightOf="@+id/select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_size_10"
+            android:gravity="center"
+            android:text="总计："
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_rmb"
+            android:layout_toRightOf="@+id/tv_all"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_size_10"
+            android:gravity="center"
+            android:text="￥"
+            android:textColor="@color/login_red"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_toRightOf="@+id/tv_rmb"
+            android:id="@+id/total_price"
+            android:layout_width="wrap_content"
+            android:minWidth="70dp"
+            android:padding="@dimen/mar_5"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="0"
+            android:textColor="@color/login_red"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_toRightOf="@+id/total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/notinclude"
+            android:textSize="10sp" />
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/finish"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!---->
+        <!--android:layout_marginLeft="@dimen/margin_size_10"-->
+        <!--android:background="@color/app_theme"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingBottom="@dimen/margin_size_10"-->
+        <!--android:paddingLeft="@dimen/mar_20"-->
+        <!--android:paddingRight="@dimen/mar_20"-->
+        <!--android:paddingTop="@dimen/margin_size_10">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/toalcount"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:text="结算"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="16sp" />-->
+
+        <!--</LinearLayout>-->
+
+
+        <TextView
+            android:id="@+id/toalcount2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="结算"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:background="@color/app_theme"
+            android:paddingLeft="@dimen/mar_15"
+            android:paddingRight="@dimen/mar_15"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

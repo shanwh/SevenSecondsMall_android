@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="41dp">
+
+    <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+        android:id="@+id/if_select_good_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/mar_15"
+        android:paddingLeft="@dimen/mar_15"
+        android:paddingTop="@dimen/mar_8"
+        android:paddingBottom="@dimen/mar_8"
+        android:text="@string/icon_un_select"
+        android:textSize="15sp" />
+
+
+    <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize3"
+        android:text="@string/icon_store2"
+        android:textColor="@color/colorAttention_orange"
+        android:layout_marginRight="@dimen/mar_8"
+        />
+
+    <TextView
+        android:id="@+id/tv_store_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:text="XX旗舰店"
+        android:layout_marginRight="@dimen/mar_14"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/isfree_ship"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginRight="@dimen/chat_nick_margin_left"
+        android:textSize="9sp"
+        android:textColor="@color/colorTextGray"
+        />
+
+</LinearLayout>

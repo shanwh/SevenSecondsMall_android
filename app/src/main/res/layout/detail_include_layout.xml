@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/elva_item"
+            android:layout_height="@dimen/height_goods_detail"
+            android:layout_marginTop="@dimen/margin_size_4"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/margin_size_10"
+                android:text="图文详情"/>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/add_item"
+            android:layout_height="@dimen/height_goods_detail"
+            android:layout_marginTop="@dimen/margin_size_10"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_above="@+id/elva_item"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                android:id="@+id/pop_add"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/icon_more"/>
+
+            <TextView
+                android:id="@+id/send"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#7c7c7c"
+                android:layout_marginLeft="@dimen/margin_size_10"
+                android:text="商品评价"/>
+
+            <LinearLayout
+                android:layout_toRightOf="@+id/send"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/margin_size_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    tools:text="地点"/>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/select_item"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_size_10"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/add_item"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/pop_attrs"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/more"/>
+
+            <TextView
+                android:id="@+id/good_select"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:padding="@dimen/mar_10"
+                android:textSize="12sp"
+                android:layout_centerVertical="true"
+                android:textColor="#7c7c7c"
+                android:text="已选"/>
+
+            <LinearLayout
+                android:layout_toRightOf="@+id/good_select"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/select_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:paddingTop="@dimen/mar_10"
+                    android:paddingBottom="@dimen/mar_10"
+                    android:textColor="@color/black"
+                    android:text="商品名称"/>
+
+                <TextView
+                    android:id="@+id/select_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/mar_10"
+                    android:paddingBottom="@dimen/mar_10"
+                    android:layout_marginLeft="@dimen/margin_size_10"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    tools:text="数量1"/>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_detail"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/select_item"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/goods_name"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:maxLines="2"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/margin_size_10"
+                    android:layout_marginTop="@dimen/margin_size_10"
+                    tools:text="xiandai12312313131231321"/>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_size_10"
+                    android:layout_marginTop="@dimen/mar_5"
+                    android:layout_marginBottom="@dimen/mar_5"
+                    android:orientation="horizontal">
+
+                    <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="@color/login_red"
+                        android:text="@string/icon_rmb"/>
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="@color/login_red"
+                        tools:text="2313"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_above="@+id/ll_detail"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+
+                <cn.bingoogolapple.bgabanner.BGABanner
+                    android:id="@+id/banner_good_flip"
+                    style="@style/BannerDefaultStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    app:banner_indicatorGravity="bottom|center_horizontal"
+                    app:banner_pointDrawable="@drawable/bga_banner_selector_point_solid1"
+                    app:banner_transitionEffect="defaultEffect" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

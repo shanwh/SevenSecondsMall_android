@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/alertdiag_bg"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mar_15"
+        android:layout_marginBottom="@dimen/mar_15"
+        android:layout_gravity="center"
+        android:text="申请成功"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/colorBottomBlack"
+        android:paddingTop="@dimen/mar_7"
+        android:paddingBottom="@dimen/mar_7"
+        />
+
+
+
+    <TextView
+        android:id="@+id/code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:lineSpacingExtra="@dimen/mar_3"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="6922711079066"
+        />
+
+    <!--<TextView-->
+        <!--android:id="@+id/brand"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="15sp"-->
+        <!--android:layout_marginLeft="@dimen/mar_15"-->
+        <!--android:layout_marginRight="@dimen/mar_15"-->
+        <!--android:layout_marginTop="@dimen/mar_10"-->
+        <!--android:layout_marginBottom="@dimen/mar_25"-->
+        <!--android:lineSpacingExtra="@dimen/mar_3"-->
+        <!--android:gravity="center"-->
+        <!--android:text=""-->
+        <!--/>-->
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/ll_bottom_tab"
+        android:background="#337c7c7c" />
+
+    <TextView
+        android:id="@+id/sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:lineSpacingExtra="@dimen/mar_3"
+        android:text="我知道了"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/colorBlueText"
+        android:padding="@dimen/mar_13"
+        />
+
+</LinearLayout>

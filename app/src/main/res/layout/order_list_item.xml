@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="@dimen/mar_70"
+        android:layout_height="@dimen/mar_70"
+        android:layout_margin="@dimen/mar_10" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/mar_5"
+        android:layout_marginTop="@dimen/mar_15"
+        android:layout_toRightOf="@+id/iv"
+        android:lines="2"
+        android:maxEms="9"
+        android:textColor="@color/colorBottomBlack"
+        android:textSize="@dimen/textSize5"
+        tools:text="" />
+
+
+    <TextView
+        android:id="@+id/tv_describe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_toRightOf="@+id/iv"
+        android:lines="2"
+        android:maxEms="9"
+        android:text=""
+        android:textColor="@color/colorIdGray"
+        android:textSize="@dimen/textSize5" />
+<LinearLayout android:id="@+id/ll"
+    android:layout_width="wrap_content"  android:layout_alignTop="@+id/tv_name"   android:layout_marginRight="8dp"
+    android:layout_marginLeft="@dimen/mar_5"    android:gravity="center"  android:layout_alignParentRight="true"
+    android:layout_height="20sp">
+    <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+        android:id="@+id/if_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:gravity="center"
+        android:text="@string/icon_rmb"
+        android:textColor="@color/colorBottomBlack"
+        android:textSize="@dimen/textSize3" />
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize3" android:gravity="center"
+        android:textColor="@color/colorBottomBlack"
+        tools:text="69.00" />
+</LinearLayout>
+    <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+        android:id="@+id/if_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:layout_marginLeft="@dimen/mar_5"
+        android:layout_toLeftOf="@+id/tv_old_price"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/mar_3"
+        android:text="@string/icon_rmb" android:visibility="gone"
+        android:textColor="@color/colorIdGray"
+        android:textSize="@dimen/textSize3" />
+
+    <TextView
+        android:id="@+id/tv_old_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ll"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/mar_8"
+        android:gravity="center"
+        android:lines="1"
+        android:textSize="@dimen/textSize3"
+        android:textColor="@color/colorIdGray"
+        tools:text="168.00" />
+
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/mar_15"
+        android:background="@drawable/to_buy_bg"
+        android:paddingBottom="@dimen/mar_5"
+        android:paddingLeft="@dimen/mar_15"
+        android:paddingRight="@dimen/mar_15"
+        android:paddingTop="@dimen/mar_5"
+        android:text="去评价"
+        android:textColor="@color/white"
+        android:visibility="visible" />
+</RelativeLayout>
+

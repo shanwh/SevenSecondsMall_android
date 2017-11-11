@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/title_head_layout" android:visibility="gone"/>
+
+    <include layout="@layout/base_toolbar"/>
+    <RelativeLayout
+        android:id="@+id/rl_person"
+        style="@style/rl_my_set">
+
+        <TextView
+            style="@style/tv_setting"
+            android:textSize="16sp"
+            android:text="账号问题" />
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView style="@style/if_tv_my_set" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_funtion"
+        android:layout_marginTop="3dp"
+        style="@style/rl_my_set">
+
+        <TextView
+            style="@style/tv_setting"
+            android:textSize="16sp"
+            android:text="功能问题" />
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView style="@style/if_tv_my_set" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_app"
+        android:layout_marginTop="3dp"
+        style="@style/rl_my_set">
+
+        <TextView
+            style="@style/tv_setting"
+            android:textSize="16sp"
+            android:text="APP报错" />
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView style="@style/if_tv_my_set" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_order"
+        android:layout_marginTop="3dp"
+        style="@style/rl_my_set">
+
+        <TextView
+            style="@style/tv_setting"
+            android:textSize="16sp"
+            android:text="订单问题" />
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView style="@style/if_tv_my_set" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

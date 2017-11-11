@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:layout_width="match_parent"
+    android:id="@+id/drawerLayout"
+    android:paddingLeft="12dp"
+
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="加速时间"
+            android:textColor="#333333"
+            android:textSize="15dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="剩余金额区间"
+            android:textColor="#333333"
+            android:textSize="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="13dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="wrap_content"
+                android:textSize="13dp"
+                android:textColor="#c8c8c8"
+                android:hint="最低金额" android:gravity="center"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="8dp"
+                android:background="#c8c8c8"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_height="1dp" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:textSize="13dp"
+                android:textColor="#c8c8c8"
+                android:gravity="center"
+                android:hint="最高金额"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="进度"
+            android:textColor="#333333"
+            android:textSize="15dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="折扣"
+            android:textColor="#333333"
+            android:textSize="15dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

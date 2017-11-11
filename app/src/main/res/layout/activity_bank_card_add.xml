@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/ll_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mar_15"
+            android:text="请绑定持卡人本人的银行卡" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_card_owner"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/mar_15"
+                android:gravity="center"
+                android:text="持卡人" />
+
+            <EditText
+                android:id="@+id/et_card_owner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_card_owner"
+                android:background="@null"
+                android:enabled="false"
+                android:padding="@dimen/mar_15"
+                android:textColor="@color/colorGray2"
+                android:textColorHint="@color/colorGray2"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_card_number"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/mar_15"
+                android:gravity="center"
+                android:text="卡号" />
+
+            <EditText
+                android:id="@+id/et_card_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_card_number"
+                android:background="@null"
+                android:hint="请输入卡号"
+                android:inputType="number"
+                android:padding="@dimen/mar_15"
+                android:textColor="@color/colorGray2"
+                android:textColorHint="@color/colorGray2"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_card_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mar_5"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_card_type"
+                android:layout_width="90dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/mar_15"
+                android:text="卡类型" />
+
+            <TextView
+                android:id="@+id/et_card_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_card_type"
+                android:background="@null"
+                android:padding="@dimen/mar_15"
+                android:textColor="@color/colorGray2"
+                android:textColorHint="@color/colorGray2"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="1dp"-->
+            <!--android:background="@color/white">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_phone_number"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:padding="@dimen/mar_15"-->
+                <!--android:text="手机号" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_phone_number"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_toRightOf="@+id/tv_phone_number"-->
+                <!--android:background="@null"-->
+                <!--android:hint="请输入银行预留手机号"-->
+                <!--android:padding="@dimen/mar_15"-->
+                <!--android:inputType="phone"-->
+                <!--android:textColor="@color/colorGray2"-->
+                <!--android:textColorHint="@color/colorGray2"-->
+                <!--android:textCursorDrawable="@null"-->
+                <!--android:textSize="14sp" />-->
+        <!--</RelativeLayout>-->
+    </LinearLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_code"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/white"-->
+        <!--&gt;-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_code"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:padding="@dimen/mar_15"-->
+            <!--android:text="验证码" />-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/et_code"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toRightOf="@+id/tv_code"-->
+            <!--android:background="@null"-->
+            <!--android:hint="请输入您收到的验证码"-->
+            <!--android:padding="@dimen/mar_15"-->
+            <!--android:textColor="@color/colorGray2"-->
+            <!--android:textColorHint="@color/colorGray2"-->
+            <!--android:textCursorDrawable="@null"-->
+            <!--android:textSize="14sp" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ll_password"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:visibility="gone"-->
+        <!--&gt;-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/white">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_password"-->
+                <!--android:layout_width="90dp"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:padding="@dimen/mar_15"-->
+                <!--android:text="密码" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_password"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_toRightOf="@+id/tv_password"-->
+                <!--android:background="@null"-->
+                <!--android:hint="密码(6位数字密码)"-->
+                <!--android:inputType="numberPassword"-->
+                <!--android:padding="@dimen/mar_15"-->
+                <!--android:textColor="@color/colorGray2"-->
+                <!--android:textColorHint="@color/colorGray2"-->
+                <!--android:textCursorDrawable="@null"-->
+                <!--android:textSize="14sp" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/white">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_password_c"-->
+                <!--android:layout_width="90dp"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:padding="@dimen/mar_15"-->
+                <!--android:text="确认密码" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_password_c"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_toRightOf="@+id/tv_password_c"-->
+                <!--android:background="@null"-->
+                <!--android:inputType="numberPassword"-->
+                <!--android:hint="确认密码"-->
+                <!--android:padding="@dimen/mar_15"-->
+                <!--android:textColor="@color/colorGray2"-->
+                <!--android:textColorHint="@color/colorGray2"-->
+                <!--android:textCursorDrawable="@null"-->
+                <!--android:textSize="14sp" />-->
+        <!--</RelativeLayout>-->
+    <!--</LinearLayout>-->
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/mar_20"
+        android:layout_marginRight="@dimen/mar_20"
+        android:layout_marginTop="@dimen/mar_25"
+        android:background="@drawable/to_buy_bg"
+        android:gravity="center"
+        android:padding="@dimen/mar_15"
+        android:text="下一步"
+        android:textColor="@color/white"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:paddingBottom="@dimen/mar_15">
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/if_tv_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/mar_25"
+            android:text="@string/icon_success"
+            android:textColor="@color/colorGreenFinish"
+            android:textSize="100sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/if_tv_success"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/mar_15"
+            android:text="添加成功"
+            android:textColor="@color/colorHint"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</LinearLayout>

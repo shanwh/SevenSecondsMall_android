@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="search"> &#xe600;</string>
+    <string name="back"> &#xe61d;</string>
+    <string name="icon_more2">&#xe61e;</string>
+    <string name="delete">&#xe61f;</string>
+    <string name="telnum">&#xe60f;</string>
+    <string name="icon_password">&#xe622;</string>
+    <string name="search2">&#xe621;</string>
+    <string name="code">&#xe622;</string>
+
+    <!--返回-->
+    <string name="icon_return">&#xe601;</string>
+
+    <!--更多-->
+    <string name="icon_more">&#xe620;</string>
+    <!--分享-->
+    <string name="icon_share">&#xe627;</string>
+    <!--删除-->
+    <string name="icon_delete">&#xe62b;</string>
+    <!--收藏-->
+    <string name="icon_collect">&#xe602;</string>
+    <!--收藏-->
+    <string name="icon_collect_new">&#xe691;</string>
+
+    <!--收藏2-->
+    <string name="icon_collect2">&#xe611;</string>
+
+    <!--筛选-->
+    <string name="icon_filter">&#xe6b1;</string>
+    <!--排序-->
+    <string name="icon_sorting">&#xe78a;</string>
+    <!--锁-->
+    <string name="icon_lock">&#xe622;</string>
+    <!--取消-->
+    <string name="icon_cancel">&#xe623;</string>
+    <!---手机号码-->
+    <string name="icon_mo">&#xe624;</string>
+
+    <!--已付款-->
+    <string name="icon_payed">&#xe610;</string>
+    <!--待付款-->
+    <string name="icon_wait_for_pay">&#xe619;</string>
+    <!--待付款-->
+    <string name="icon_wait_for_pay_new">&#xe686;</string>
+
+    <!--待发货-->
+    <string name="icon_wait_for_send">&#xe803;</string>
+    <!--待发货-->
+    <string name="icon_wait_for_send_new">&#xe68c;</string>
+
+
+    <!--待评价-->
+    <string name="icon_wait_for_comment">&#xe745;</string>
+    <!--待评价2-->
+    <string name="icon_wait_for_comment_new">&#xe68a;</string>
+
+    <!--扫码-->
+    <string name="icon_scan">&#xe631;</string>
+    <!--待收货-->
+    <!--<string name="icon_wait_for_get">&#xe607;</string>-->
+    <!--勾选-->
+    <string name="icon_select">&#xe642;</string>
+    <!--未勾选-->
+    <string name="icon_un_select">&#xe682;</string>
+    <!--已完成-->
+    <string name="icon_finished">&#xe60d;</string>
+
+    <!--在线客服-->
+    <string name="icon_online_service">&#xe630;</string>
+    <!--订单-->
+    <string name="icon_order">&#xe637;</string>
+
+
+
+    <!--加-->
+    <string name="icon_plus">&#xe634;</string>
+    <!--减-->
+    <string name="icon_minus">&#xe635;</string>
+
+    <!--分类-->
+    <string name="icon_sort">&#xe633;</string>
+    <!--我-->
+    <string name="icon_my">&#xe60f;</string>
+    <!--消息-->
+    <string name="icon_message">&#xe718;</string>
+    <!--购物车-->
+    <string name="icon_buy_car">&#xe60c;</string>
+    <!--团购-->
+    <string name="icon_team_buying">&#xe668;</string>
+    <!--首页-->
+    <string name="icon_home">&#xe638;</string>
+    <!--品牌-->
+    <string name="icon_brand">&#xe694;</string>
+    <!--搜索-->
+    <string name="icon_search">&#xe603;</string>
+    <!--会员特权-->
+    <string name="icon_privilege">&#xe664;</string>
+    <!--折扣-->
+    <string name="icon_discount">&#xe61b;</string>
+    <!--元-->
+    <string name="icon_rmb">&#xe606;</string>
+    <!--赠品进度-->
+    <string name="icon_free_speed">&#xe695;</string>
+
+
+    <!--支付宝-->
+    <string name="icon_ali_pay">&#xe625;</string>
+    <!--微信-->
+    <string name="icon_we_chat">&#xe608;</string>
+    <!--银行卡-->
+    <string name="icon_bank">&#xe76e;</string>
+
+    <!--添加-->
+    <string name="icon_add_more">&#xe64f;</string>
+    <!--1-->
+    <string name="icon_one">&#xe604;</string>
+    <!--推荐-->
+    <string name="icon_recommend">&#xe652;</string>
+    <!--添加-会员-->
+    <string name="icon_add_more_vip">&#xe7eb;</string>
+    <!--会员专区-->
+    <string name="icon_vip_new">&#xe684;</string>
+
+    <!--添加-图片-->
+    <string name="icon_add_more_pic">&#xe7ad;</string>
+    <!--日历-->
+    <string name="icon_day_li">&#xe74e;</string>
+    <!--级别权限-->
+    <string name="icon_root">&#xe643;</string>
+    <!--评分-->
+    <string name="icon_commend">&#xe653;</string>
+    <!--已评分-->
+    <string name="icon_commended">&#xe7bf;</string>
+    <!--记录-->
+    <string name="icon_record">&#xe639;</string>
+    <!--团队-->
+    <string name="icon_team">&#xe62a;</string>
+    <!--验证码-->
+    <string name="icon_check_code">&#xe628;</string>
+    <!--地图-->
+    <string name="icon_map">&#xe617;</string>
+    <!--打折-->
+    <string name="icon_sell">&#xe69a;</string>
+    <!--积分-->
+    <string name="icon_integral">&#xe629;</string>
+    <!--推广团队-->
+    <string name="icon_recommend_team">&#xe85d;</string>
+    <!--哭脸-->
+    <string name="icon_cry">&#xe609;</string>
+    <!--图片-->
+    <string name="icon_img">&#xe661;</string>
+    <!--播放-->
+    <string name="icon_play">&#xe6c5;</string>
+    <!--直播-->
+    <string name="icon_live">&#xe613;</string>
+    <!--折线-->
+    <string name="icon_live_line">&#xe651;</string>
+    <!--眼睛-->
+    <string name="icon_eyes">&#xe657;</string>
+    <!--设置-->
+    <string name="icon_setting">&#xe632;</string>
+  	<!--关闭-->
+    <string name="icon_close">&#xe60b;</string>
+    <!--手机验证成功-->
+    <string name="icon_success">&#xe62c;</string>
+    <!--余额-->
+    <string name="icon_my_money">&#xe62d;</string>
+    <!--通知-->
+    <string name="icon_inform">&#xe612;</string>
+    <!--免单-->
+    <string name="icon_free">&#xe671;</string>
+    <!--待收货-新-->
+    <string name="icon_wait_for_get">&#xe63e;</string>
+    <!--待收货-新2-->
+    <string name="icon_wait_for_get_new">&#xe687;</string>
+    <!--通知-->
+    <string name="icon_inform_home">&#xe6e0;</string>
+    <!--更多-->
+    <string name="icon_re_co">&#xe63f;</string>
+    <!--首页消息-->
+    <string name="icon_home_msg">&#xe75b;</string>
+    <!--服装市场-->
+    <string name="icon_clothing">&#xe641;</string>
+    <!--吃喝-->
+    <string name="icon_eat">&#xe640;</string>
+    <!--美妆-->
+    <string name="icon_make_up">&#xe644;</string>
+    <!--黄金-->
+    <string name="icon_gold">&#xe646;</string>
+    <!--讨论-->
+    <string name="icon_discuss">&#xe647;</string>
+    <!--奖励-->
+    <string name="icon_reward">&#xe648;</string>
+    <!--邀请-->
+    <string name="icon_invited">&#xe78d;</string>
+
+    <!--邀请有奖-->
+    <string name="icon_invited_new">&#xe693;</string>
+    <!--升级-->
+    <string name="icon_up_lv">&#xe6e4;</string>
+    <!--加盟-->
+    <string name="icon_join_shop">&#xe649;</string>
+    <!--加盟  商家-->
+    <string name="icon_join_shop_new">&#xe68b;</string>
+    <!--余额-->
+    <string name="icon_user_money">&#xe62d;</string>
+    <!--收付款-->
+    <string name="icon_money_code">&#xe666;</string>
+    <!--邀请-->
+    <string name="icon_home_invited">&#xe64b;</string>
+
+    <!--手机充值-->
+    <string name="icon_phone_pay">&#xe655;</string>
+    <!--电影票-->
+    <string name="icon_movie">&#xe64e;</string>
+    <!--白条-->
+    <string name="icon_white_line">&#xe659;</string>
+    <!--生活缴费-->
+    <string name="icon_life_pay">&#xe667;</string>
+    <!--机票-->
+    <string name="icon_buy_air">&#xe654;</string>
+    <!--还款金额-->
+    <string name="icon_back_money">&#xe656;</string>
+
+    <!--钱包-->
+    <string name="icon_my_wallet">&#xe699;</string>
+    <!--收藏-->
+    <string name="icon_my_collect">&#xe65a;</string>
+    <!--客服-->
+    <string name="icon_service">&#xe65b;</string>
+
+
+    <string name="icon_give">&#xe662;</string>
+    <!--更多-->
+    <string name="icon_drink">&#xe663;</string>
+    <!--位置-->
+    <string name="icon_location">&#xe673;</string>
+    <!--翻转-->
+    <string name="icon_evert">&#xe783;</string>
+    <!--信号-->
+    <string name="icon_signal_attention">&#xe67c;</string>
+    <!--心-->
+    <string name="icon_heart">&#xe678;</string>
+    <!--店铺1-->
+    <string name="icon_store1">&#xe63a;</string>
+    <!--店铺-->
+    <string name="icon_store">&#xe645;</string>
+    <!--商家-->
+    <string name="icon_store2">&#xe665;</string>
+    <!--资质认证-->
+    <string name="icon_qualification">&#xe669;</string>
+
+    <!--全部订单-->
+    <string name="icon_all_order">&#xe68f;</string>
+    <!--更多-->
+    <string name="icon_capacity">&#xe688;</string>
+    <!--更多-->
+    <string name="icon_assignment">&#xe66a;</string>
+
+    <!--取消成功-->
+    <string name="icon_cancel_success">&#xe66b;</string>
+    <!--取消失败-->
+    <string name="icon_cancel_failed">&#xe66c;</string>
+
+    <!--购物车-->
+    <string name="icon_shop_cart">&#xe697;</string>
+    <!--购物车-->
+    <string name="icon_shop_cart_full">&#xe69c;</string>
+
+    <!--个人-->
+    <string name="icon_me">&#xe6a1;</string>
+    <!--个人-->
+    <string name="icon_me_full">&#xe6a7;</string>
+    <!--首页-->
+    <string name="icon_home_1">&#xe6a2;</string>
+    <!--首页-->
+    <string name="icon_home_1_full">&#xe6a6;</string>
+    <!--直播-->
+    <string name="icon_live_1">&#xe6a4;</string>
+    <!--直播-->
+    <string name="icon_live_1_full">&#xe6a5;</string>
+    <string name="icon_add_cart">&#xe64d;</string>
+
+</resources>

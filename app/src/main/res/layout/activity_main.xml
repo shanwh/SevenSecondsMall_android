@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="false"
+    tools:context=".Activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line"
+        android:orientation="vertical"
+        />
+    <View
+        android:id="@+id/v"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_top"
+        android:background="@color/app_theme" />
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/v"
+        android:background="@color/app_theme">
+        <!--<ImageView-->
+        <!--android:id="@+id/logo"-->
+        <!--android:layout_width="76dp"-->
+        <!--android:layout_height="24dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="@dimen/margin_size_10"-->
+        <!--android:src="@drawable/icon_he" />-->
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="商城"
+            android:textColor="#ffffffff"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/edit_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/margin_size_10"
+            android:layout_marginRight="@dimen/margin_size_10"
+            android:layout_toLeftOf="@+id/home_msg"
+            android:layout_toRightOf="@+id/zxing"
+            android:background="@drawable/round_editext_grad"
+            android:clickable="true">
+
+
+            <LinearLayout
+                android:id="@+id/layout_default"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                    android:id="@+id/iv_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/margin_size_10"
+                    android:text="@string/search"
+                    android:textColor="#3b3740" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/zxing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/icon_scan"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/home_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="@string/icon_home_msg"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <!--购物车特有start-->
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/if_tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/mar_15"
+            android:text="@string/icon_home_msg"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+
+            />
+
+        <RadioButton
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/if_tv_msg"
+            android:padding="@dimen/mar_6"
+            android:text="编辑"
+            android:button="@null"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:visibility="gone" />
+        <!--购物车特有end-->
+
+        <!--我的特有start-->
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/if_tv_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mar_10"
+            android:text="@string/icon_setting"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:visibility="gone" />
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/if_tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/mar_15"
+            android:layout_marginRight="@dimen/mar_10"
+            android:layout_marginTop="@dimen/mar_5"
+            android:padding="@dimen/mar_5"
+            android:text="@string/icon_home_msg"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_bubble_msg"
+            style="@style/style_tv_bubble"
+            android:layout_alignRight="@+id/if_tv_message"
+            android:layout_alignTop="@+id/if_tv_message"
+            android:text=" 1 "
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_msg_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_bubble_msg"
+            android:layout_toRightOf="@+id/tv_bubble_msg"
+            android:text="+"
+            android:textColor="@color/app_theme"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+        <!--我的特有end-->
+
+    </RelativeLayout>
+
+    <!--底部栏-->
+    <LinearLayout
+        android:id="@+id/ll_bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"
+                android:orientation="vertical">
+
+                <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                    android:id="@+id/if_tv_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/icon_home_1"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:text="首页"
+                    android:textSize="8.5sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_video"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"
+                android:orientation="vertical">
+
+                <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                    android:id="@+id/if_tv_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/icon_live_1"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:text="DING直播"
+                    android:textSize="8.5sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/rl_sort"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView-->
+                    <!--android:id="@+id/if_tv_sort"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/icon_sort"-->
+                    <!--android:textSize="25sp" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_sort"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginTop="@dimen/mar_3"-->
+                    <!--android:text="分类"-->
+                    <!--android:textSize="10sp" />-->
+            <!--</LinearLayout>-->
+        <!--</RelativeLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/rl_cart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"
+                android:orientation="vertical">
+
+                <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                    android:id="@+id/if_tv_buy_car"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/icon_shop_cart"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:text="购物车"
+                    android:textSize="8.5sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"
+                android:orientation="vertical">
+
+                <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                    android:id="@+id/if_tv_my"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/icon_me"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_my"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:text="我的"
+                    android:textSize="8.5sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/ll_bottom_tab"
+        android:background="#e9e9e9" />
+
+
+
+    <!--恭喜用户免单-->
+    <LinearLayout
+        android:id="@+id/ll_inform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_title"
+        android:layout_margin="@dimen/mar_15"
+        android:background="@drawable/button_bg_home"
+        android:padding="@dimen/mar_5"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="@dimen/mar_25"
+            android:layout_height="@dimen/mar_25"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/weixin" />
+
+        <TextView
+            android:id="@+id/tv_inform_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/mar_5"
+            android:text="恭喜用户XXX"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_inform_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="免单成功"
+            android:textColor="@color/light_red"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <!--通知-->
+    <RelativeLayout
+        android:id="@+id/rl_inform"
+        android:layout_width="@dimen/mar_45"
+        android:layout_height="@dimen/mar_45"
+        android:layout_above="@+id/ll_bottom_tab"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="75dp"
+        android:layout_marginRight="@dimen/mar_15"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:background="@drawable/button_bg_home3"
+        android:padding="@dimen/mar_5">
+
+        <!--通知-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="@string/icon_inform_home"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="通知"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <!--跳回顶部-->
+    <RelativeLayout
+        android:id="@+id/rl_to_top"
+        android:layout_width="@dimen/mar_45"
+        android:layout_height="@dimen/mar_45"
+        android:visibility="gone"
+        android:layout_above="@+id/ll_bottom_tab"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/mar_15"
+        android:layout_marginRight="@dimen/mar_15"
+        android:layout_gravity="center"
+        android:background="@drawable/button_bg_home3"
+        android:padding="@dimen/mar_5">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:rotation="90"
+                android:text="@string/back"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="顶部"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

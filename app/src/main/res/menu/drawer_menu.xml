@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/order"
+            android:icon="@mipmap/ic_launcher"
+            android:title="@string/order"
+            />
+
+        <item
+            android:id="@+id/wallet"
+            android:icon="@mipmap/ic_launcher"
+            android:title="@string/wallet"/>
+
+        <item
+            android:id="@+id/collection"
+            android:icon="@mipmap/ic_launcher"
+            android:title="@string/collection"/>
+
+        <item
+            android:id="@+id/trolley"
+            android:icon="@mipmap/ic_launcher"
+            android:title="@string/trolley"/>
+
+        <item
+            android:id="@+id/setting"
+            android:icon="@mipmap/ic_launcher"
+            android:title="@string/setting"/>
+
+        <item
+            android:id="@+id/loginout"
+            android:icon="@mipmap/ic_launcher"
+            android:visible="false"
+            android:title="@string/loginout"/>
+
+
+
+    </group>
+
+</menu>

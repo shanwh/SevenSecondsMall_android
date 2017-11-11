@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include android:visibility="gone"
+        layout="@layout/title_head_layout"/>
+    <include layout="@layout/base_toolbar"/>
+    <include layout="@layout/toolbar_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/bottom_tab"
+            style="@style/ll_home_tab"
+            android:layout_height="37dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_icon1"
+                style="@style/fragment_tab_rl">
+
+                <TextView
+                    android:id="@+id/tv_icon1"
+                    style="@style/fragment_tab_tv_home"
+                    android:text="@string/all" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_icon2"
+                style="@style/fragment_tab_rl">
+
+                <TextView
+                    android:id="@+id/tv_icon2"
+                    style="@style/fragment_tab_tv_home1"
+                    android:text="@string/waitforpay" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_icon3"
+                style="@style/fragment_tab_rl">
+
+                <TextView
+                    android:id="@+id/tv_icon3"
+                    style="@style/fragment_tab_tv_home1"
+                    android:text="@string/waitforsend" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_icon4"
+                style="@style/fragment_tab_rl">
+
+                <TextView
+                    android:id="@+id/tv_icon4"
+                    style="@style/fragment_tab_tv_home1"
+                    android:text="@string/waitforget" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_icon5"
+                style="@style/fragment_tab_rl">
+
+                <TextView
+                    android:id="@+id/tv_icon5"
+                    style="@style/fragment_tab_tv_home1"
+                    android:text="待评价" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_icon6"
+                style="@style/fragment_tab_rl">
+
+                <TextView
+                    android:id="@+id/tv_icon6"
+                    style="@style/fragment_tab_tv_home1"
+                    android:text="已退款" />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/cursor"
+                android:layout_width="60dp"
+                android:layout_height="2dp"
+                android:background="@color/white"
+                android:scaleType="matrix"
+                android:src="@drawable/xiahuaxian" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/colorHomeBackground" />
+
+
+        <com.yidu.sevensecondmall.views.widget.dispatchViewPager
+            android:id="@+id/viewpager_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:padding="@dimen/mar_15">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/address_mar"
+            tools:text=""/>
+
+
+        <TextView
+            android:id="@+id/mobile"
+            style="@style/address_mar"
+            android:layout_marginLeft="@dimen/mar_15"
+            android:layout_toRightOf="@+id/name"
+            tools:text=""/>
+
+        <TextView
+            android:id="@+id/add"
+            style="@style/address_mar"
+            android:layout_below="@+id/name"
+            tools:text=""/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_height="@dimen/line"
+        android:layout_width="match_parent"
+        android:background="@color/colorHomeHeadLineComment"
+        />
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        >
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/select_add"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/mar_15"
+            android:paddingRight="@dimen/mar_10"
+            android:paddingTop="@dimen/mar_10"
+            android:paddingBottom="@dimen/mar_10"
+            style="@style/address_mar"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorBottomBlack"
+            android:text="@string/icon_un_select"/>
+
+
+        <TextView
+            android:id="@+id/tv_select"
+            android:textSize="16sp"
+            style="@style/address_mar"
+            android:layout_toRightOf="@+id/select_add"
+            android:layout_marginLeft="0dp"
+            android:padding="@dimen/mar_5"
+            android:layout_centerVertical="true"
+            android:text="默认地址"/>
+
+
+        <TextView
+            android:id="@+id/edit"
+            style="@style/address_mar"
+            android:layout_toLeftOf="@+id/delete"
+            android:layout_marginRight="@dimen/margin_size_10"
+            android:text="编辑"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/delete"
+            style="@style/address_mar"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_size_10"
+            android:layout_centerVertical="true"
+            android:text="删除"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mar_5"
+        />
+
+</LinearLayout>

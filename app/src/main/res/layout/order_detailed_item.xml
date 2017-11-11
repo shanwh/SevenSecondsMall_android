@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_item"
+        android:padding="@dimen/mar_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_goods"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:contentDescription="美富特美容仪"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_loading_pic" />
+
+        <RelativeLayout
+            android:id="@+id/tv_content"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/iv_goods">
+
+            <TextView
+                android:id="@+id/tv_goods_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/iv_price"
+                android:layout_marginRight="@dimen/mar_5"
+                android:layout_marginLeft="@dimen/mar_15"
+                android:text="美富特美容仪" />
+
+            <TextView
+                android:id="@+id/tv_meal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_goods_name"
+                android:layout_marginLeft="@dimen/mar_15"
+                android:layout_marginTop="@dimen/margin_size_10"
+                android:layout_marginRight="@dimen/mar_5"
+                android:layout_toLeftOf="@+id/goodscount"
+                android:text="套餐分类:套餐A"
+                android:textSize="11sp" />
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                android:id="@+id/iv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_price"
+                android:textColor="@color/light_red"
+                android:text="@string/icon_rmb" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/iv_price"
+                android:layout_alignParentRight="true"
+                android:text="528.00" />
+
+            <TextView
+                android:id="@+id/goodscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_price"
+                android:layout_marginTop="@dimen/margin_size_10"
+                android:text="x1" />
+
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/finishstatus"
+            android:layout_toLeftOf="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_content"
+            android:background="@drawable/alert_dialog_bg2"
+            android:paddingBottom="@dimen/margin_size_6"
+            android:layout_marginTop="@dimen/mar_15"
+            android:layout_marginRight="@dimen/margin_size_10"
+            android:paddingLeft="@dimen/mar_15"
+            android:paddingRight="@dimen/mar_15"
+            android:paddingTop="@dimen/margin_size_6"
+            android:text="售后申请"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/mar_15"
+            android:layout_below="@+id/tv_content"
+            android:background="@drawable/alert_dialog_bg2"
+            android:paddingBottom="@dimen/margin_size_6"
+            android:paddingLeft="@dimen/mar_15"
+            android:paddingRight="@dimen/mar_15"
+            android:paddingTop="@dimen/margin_size_6"
+            android:visibility="invisible"
+            android:text="退款"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

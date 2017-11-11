@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include android:visibility="gone"
+        layout="@layout/title_head_layout"/>
+
+    <include layout="@layout/base_toolbar"/>
+    <include layout="@layout/toolbar_line"/>
+    <RelativeLayout
+        android:id="@+id/rl_msg"
+        style="@style/rl_my_set">
+
+        <TextView
+            style="@style/tv_setting"
+            android:textSize="16sp"
+            android:text="个人信息" />
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView style="@style/if_tv_my_set" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_identification"
+        style="@style/rl_my_set">
+
+        <TextView
+            style="@style/tv_setting"
+            android:textSize="16sp"
+            android:text="实名认证" />
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView style="@style/if_tv_my_set" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_pay_password"
+        style="@style/rl_my_set">
+
+        <TextView
+            style="@style/tv_setting"
+            android:textSize="16sp"
+            android:text="支付密码" />
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView style="@style/if_tv_my_set" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_address"
+        style="@style/rl_my_set">
+
+        <TextView
+            style="@style/tv_setting"
+            android:textSize="16sp"
+            android:text="我的收货地址" />
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView style="@style/if_tv_my_set" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_postmsg"
+        style="@style/rl_my_set">
+
+        <TextView
+            style="@style/tv_setting"
+            android:textSize="16sp"
+            android:text="消息推送设置" />
+
+        <ImageView
+            android:id="@+id/msg_switch"
+            android:layout_height="20dp"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/open"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_clear"
+        style="@style/rl_my_set">
+
+        <TextView
+            style="@style/tv_setting"
+            android:textSize="16sp"
+            android:text="清除缓存" />
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView style="@style/if_tv_my_set" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_about"
+        android:layout_marginTop="@dimen/margin_size_10"
+        style="@style/rl_my_set">
+
+        <TextView
+            style="@style/tv_setting"
+            android:textSize="16sp"
+            android:text="关于我们" />
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView style="@style/if_tv_my_set" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/loginout"
+        android:layout_height="wrap_content"
+        android:layout_width="230dp"
+        android:background="@drawable/loginout_shape"
+        android:text="退出当前账号"
+        android:padding="@dimen/mar_15"
+        android:gravity="center"
+        android:textColor="@color/light_red"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_size_38"/>
+
+
+</LinearLayout>

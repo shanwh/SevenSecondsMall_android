@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_all_goods"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_brand"
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/mar_8"
+        android:layout_height="41dp">
+
+        <TextView
+            android:id="@+id/tv_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="苹果"
+            android:textColor="@color/result_view"
+            android:textSize="@dimen/textSize1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/mar_8"
+            android:text="@string/check_all"
+            android:textSize="@dimen/textSize5" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_sub_brands"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_brand">
+
+    </android.support.v7.widget.RecyclerView>
+    <!--<View-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="@color/umeng_socialize_edit_bg"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.5dp"/>-->
+</RelativeLayout>

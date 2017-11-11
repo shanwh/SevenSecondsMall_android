@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mar_15"
+
+        >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/mar_15"
+            android:background="@color/colorLightRed" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="成为VIP会员享受更多返利"
+            android:textColor="@color/colorLightRed"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/mar_15"
+            android:layout_weight="1"
+            android:background="@color/colorLightRed" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/mar_90"
+        android:layout_marginRight="@dimen/mar_90"
+        android:layout_marginTop="@dimen/mar_15"
+        android:background="@drawable/to_buy_bg"
+        android:gravity="center"
+        android:paddingLeft="@dimen/mar_15"
+        android:paddingRight="@dimen/mar_15"
+        android:paddingTop="@dimen/mar_10"
+        android:paddingBottom="@dimen/mar_10"
+        android:text="马上申请"
+        android:textColor="@color/white" />
+</LinearLayout>

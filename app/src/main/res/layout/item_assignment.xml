@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bitmapwave="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/mar_5"
+    android:paddingRight="@dimen/mar_5"
+    android:paddingTop="@dimen/mar_10">
+
+    <RelativeLayout
+        android:layout_width="170dp"
+        android:layout_height="215dp"
+        android:background="@drawable/assignment_bg">
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/mar_3"
+            tools:text="赠品编号\n25555555555"
+            android:textColor="@color/colorAssignmentText"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_num"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="赠品金额："
+                android:textColor="@color/colorAssignmentText" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="¥188"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/iv"-->
+        <!--android:layout_width="58dp"-->
+        <!--android:layout_height="58dp"-->
+        <!--android:layout_below="@+id/ll_price"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:src="@drawable/assignment_10" />-->
+
+        <RelativeLayout
+            android:id="@+id/rl_circle"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_below="@+id/ll_price"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/empty_bg"
+            android:layout_marginTop="14dp">
+
+            <com.yidu.sevensecondmall.views.widget.WaveProgressView
+                android:id="@+id/waveProgressbar"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:rotation="180"
+                android:layout_centerInParent="true"
+                android:background="@drawable/fill_bg"
+                />
+
+
+
+                <TextView
+                    android:id="@+id/tv_present"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    tools:text="18%"
+                    android:textStyle="italic"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+        </RelativeLayout>
+        <!--</RelativeLayout>-->
+        <TextView
+            android:id="@+id/tv_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_circle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/mar_5"
+            android:background="@drawable/button_bg_180"
+            android:paddingBottom="@dimen/mar_3"
+            android:paddingLeft="@dimen/mar_10"
+            android:paddingRight="@dimen/mar_10"
+            android:paddingTop="@dimen/mar_3"
+            android:text="购买"
+            android:textColor="@color/colorAssignmentBtn" />
+    </RelativeLayout>
+</RelativeLayout>

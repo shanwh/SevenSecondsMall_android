@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/head" android:visibility="gone"
+        layout="@layout/title_head_layout" />
+
+    <include  android:id="@+id/toolbar" layout="@layout/base_toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/ll_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/style_tv_safe"
+            android:text="旧密码" />
+
+        <TextView
+            style="@style/style_tv_safe"
+            android:text="新密码" />
+
+        <!--<TextView-->
+            <!--style="@style/style_tv_safe"-->
+            <!--android:text="手机号" />-->
+
+        <TextView
+            android:id="@+id/title_code"
+            style="@style/style_tv_safe"
+            android:text="确认新密码" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_toRightOf="@+id/ll_tip"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/pass_edit"
+            style="@style/style_et_safe"
+            android:inputType="textPassword"
+            android:hint="请输入旧密码" />
+
+        <EditText
+            android:id="@+id/pass_edit2"
+            style="@style/style_et_safe"
+            android:inputType="textPassword"
+            android:hint="请输入新密码" />
+
+        <!--<EditText-->
+            <!--android:id="@+id/tel_num"-->
+            <!--style="@style/style_et_safe"-->
+            <!--android:hint="11位手机号码" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/mar_5"
+            >
+
+            <EditText
+                android:layout_toLeftOf="@+id/tv_code"
+                android:id="@+id/edit"
+                style="@style/style_et_safe"
+                android:hint="请确认新密码" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_code"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:textSize="16sp"-->
+                <!--android:paddingTop="@dimen/mar_5"-->
+                <!--android:paddingBottom="@dimen/mar_5"-->
+                <!--android:paddingLeft="@dimen/mar_7"-->
+                <!--android:paddingRight="@dimen/mar_7"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:background="@drawable/round_f_txt"-->
+                <!--android:textColor="@color/green"-->
+                <!--android:text="获取验证码" />-->
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_tip"
+        android:padding="@dimen/mar_15"
+        android:layout_marginRight="@dimen/mar_90"
+        android:layout_marginLeft="@dimen/mar_90"
+        android:layout_marginTop="@dimen/mar_44"
+        android:background="@drawable/to_buy_bg"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="确认"
+        />
+</RelativeLayout>

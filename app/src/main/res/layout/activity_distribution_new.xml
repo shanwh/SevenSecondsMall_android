@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:TRecyclerView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent" android:visibility="gone"
+        android:layout_height="48dp"
+        android:background="@color/colorDGray">
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mar_15"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="VIP专区"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorBottomBlack">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="@dimen/mar_80"
+            android:layout_height="@dimen/mar_80"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mar_15" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mar_15"
+            android:layout_toRightOf="@id/iv"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="野马"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mar_5"
+                android:layout_marginBottom="@dimen/mar_5"
+                android:background="@drawable/button_bg_180_vip"
+                android:paddingBottom="@dimen/mar_3"
+                android:paddingLeft="@dimen/mar_5"
+                android:paddingRight="@dimen/mar_5"
+                android:paddingTop="@dimen/mar_3"
+                android:text="普通会员"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/mar_15"
+        android:paddingBottom="@dimen/mar_5"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_privilege"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_privilege"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/mar_3"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="@dimen/mar_10"
+                android:paddingLeft="@dimen/mar_10"
+                android:paddingRight="@dimen/mar_10"
+                android:text="团队特权"
+                android:textColor="@color/colorHint" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_up_lv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_up_lv"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/mar_3"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="@dimen/mar_10"
+                android:paddingLeft="@dimen/mar_10"
+                android:paddingRight="@dimen/mar_10"
+                android:text="会员升级"
+                android:textColor="@color/colorHint" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_my_ding"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_my_ding"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/mar_3"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="@dimen/mar_10"
+                android:paddingLeft="@dimen/mar_10"
+                android:paddingRight="@dimen/mar_10"
+                android:text="我的DING宝"
+                android:textColor="@color/colorHint" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/mar_5"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/mar_15"
+            android:text="VIP套餐" />
+
+        <com.yidu.sevensecondmall.views.adapter.MuliTypeAdapter.CustomRecyclerView
+            android:id="@+id/custom_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            TRecyclerView:hasContext="true"
+            TRecyclerView:isWrapContent="true" />
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="169dp"
+        android:background="@color/app_theme">
+
+        <include layout="@layout/base_toolbar"/>
+        <RelativeLayout
+            android:id="@+id/rl_head" android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/mar_15"
+                android:text="@string/back"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="VIP专区"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/mar_15"
+                android:layout_alignParentRight="true">
+
+                <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                    android:id="@+id/if_tv_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/mar_5"
+                    android:layout_toLeftOf="@+id/if_tv_add_more"
+                    android:text="@string/icon_record"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                    android:id="@+id/if_tv_add_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:text="@string/icon_add_more_vip"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/mar_90"
+            android:text="今日返利(元)"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/mar_22"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            tools:text="暂无收益" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_red">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/mar_10"
+                android:text="推荐返利"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_recommend_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="@dimen/mar_10"
+                android:paddingLeft="@dimen/mar_10"
+                android:paddingRight="@dimen/mar_10"
+                android:text="3700.00"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/mar_10"
+                android:text="消费返利"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_consume_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="@dimen/mar_10"
+                android:paddingLeft="@dimen/mar_10"
+                android:paddingRight="@dimen/mar_10"
+                android:text="3700.00"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/mar_10"
+                android:text="可提现返利"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_sell_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="@dimen/mar_10"
+                android:paddingLeft="@dimen/mar_10"
+                android:paddingRight="@dimen/mar_10"
+                android:text="3700.00"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/fl_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mar_11">
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_brand"
+                android:textColor="@color/light_red"
+                android:textSize="40sp" />
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/icon_recommend"
+                android:textColor="@color/colorWhite"
+                android:textSize="25sp" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/fl_recommend"
+            android:text="我推荐的人(5)"
+            android:textSize="@dimen/mar_17" />
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/mar_15"
+            android:rotation="180"
+            android:text="@string/back"
+            android:textColor="@color/colorArrGray"
+            android:textSize="25sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/fl_recommend"
+            android:background="@color/colorLineGray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/fl_root"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mar_11">
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_brand"
+                android:textColor="@color/light_red"
+                android:textSize="40sp" />
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/icon_root"
+                android:textColor="@color/colorWhite"
+                android:textSize="25sp" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/fl_root"
+            android:text="我的权限"
+            android:textSize="@dimen/mar_17" />
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/mar_15"
+            android:rotation="180"
+            android:text="@string/back"
+            android:textColor="@color/colorArrGray"
+            android:textSize="25sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/fl_root"
+            android:background="@color/colorLineGray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_team"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/fl_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mar_11">
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_brand"
+                android:textColor="@color/light_red"
+                android:textSize="40sp" />
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/icon_team"
+                android:textColor="@color/colorWhite"
+                android:textSize="25sp" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/fl_team"
+            android:text="我的团队"
+            android:textSize="@dimen/mar_17" />
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/mar_15"
+            android:rotation="180"
+            android:text="@string/back"
+            android:textColor="@color/colorArrGray"
+            android:textSize="25sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/fl_team"
+            android:background="@color/colorLineGray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_recommend_team"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/fl_recommend_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mar_11">
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_brand"
+                android:textColor="@color/light_red"
+                android:textSize="40sp" />
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/icon_recommend_team"
+                android:textColor="@color/colorWhite"
+                android:textSize="25sp" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/fl_recommend_team"
+            android:text="我的推广团队"
+            android:textSize="@dimen/mar_17" />
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/mar_15"
+            android:rotation="180"
+            android:text="@string/back"
+            android:textColor="@color/colorArrGray"
+            android:textSize="25sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/fl_recommend_team"
+            android:background="@color/colorLineGray" />
+    </RelativeLayout>
+
+</LinearLayout>

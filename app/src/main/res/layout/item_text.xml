@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp"
+        android:background="@color/umeng_socialize_edit_bg"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="@dimen/mar_8"
+        android:text="iphone7"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize5" />
+
+</LinearLayout>

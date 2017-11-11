@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/include"
+        android:visibility="gone"
+        layout="@layout/item_store_car" />
+
+    <View
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:paddingRight="@dimen/mar_27"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/include"
+        android:background="#EFEFEF" />
+
+    <RelativeLayout
+        android:id="@+id/rl_table"
+        android:layout_width="wrap_content"
+        android:layout_height="105dp"
+        android:layout_below="@id/table">
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/select_good"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/mar_15"
+            android:paddingRight="5dp"
+            android:paddingTop="@dimen/mar_15"
+            android:paddingBottom="@dimen/mar_15"
+            android:text="@string/icon_un_select"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/goods_pic"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/mar_20"
+            android:layout_toRightOf="@+id/select_good"
+            android:src="@drawable/default_loading_pic" />
+
+
+        <RelativeLayout
+            android:id="@+id/state_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/mar_5"
+            android:layout_toRightOf="@+id/goods_pic"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/mar_8">
+
+            <TextView
+                android:id="@+id/goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/mar_3"
+                android:lineSpacingExtra="@dimen/mar_3"
+                android:maxLines="1"
+                android:text="欧莱雅"
+                android:textSize="@dimen/textSize5" />
+
+            <TextView
+                android:id="@+id/goods_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/goods_name"
+                android:lineSpacingExtra="@dimen/mar_3"
+                android:maxLines="1"
+                android:text=""
+                android:textSize="@dimen/textSize5" />
+
+            <LinearLayout
+                android:id="@+id/rl_price_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/goods_content">
+
+                <TextView
+                    android:id="@+id/priceleft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="￥"
+                    android:textColor="@color/login_red"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="12"
+                    android:textColor="@color/colorGray2"
+                    android:textSize="14sp" />
+
+
+
+                <TextView
+                    android:id="@+id/x"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_toLeftOf="@+id/tv_num"
+                    android:gravity="center"
+                    android:padding="@dimen/mar_5"
+                    android:text="x"
+                    android:textSize="14sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/mar_5"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:visibility="visible" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/ll_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/mar_20"
+                    android:layout_toLeftOf="@+id/if_tv_del"
+                    android:background="@drawable/edit_shape">
+
+                    <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                        android:id="@+id/if_tv_minus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="5dp"
+                        android:text="@string/icon_minus"
+                        android:textColor="@color/colorGray2"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_edit_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+
+                    <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                        android:id="@+id/if_tv_plus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="5dp"
+                        android:text="@string/icon_plus"
+                        android:textColor="@color/colorGray2"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+                <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                    android:id="@+id/if_tv_del"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:text="@string/icon_delete"
+                    android:textColor="@color/colorGray2"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/goods_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_price_num"
+                android:layout_marginTop="@dimen/mar_8"
+                android:text="重量：0.28kg"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/goods_catena"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/goods_sort"
+                android:layout_marginLeft="@dimen/mar_15"
+                android:layout_marginTop="@dimen/mar_8"
+                android:layout_toRightOf="@id/goods_sort"
+                android:text=""
+                android:textSize="9sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/state_edit"-->
+    <!--android:layout_height="150dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_toRightOf="@+id/goods_pic"-->
+    <!--android:orientation="vertical"-->
+    <!--android:visibility="gone"-->
+    <!--&gt;-->
+
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/delete"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:gravity="center"-->
+    <!--android:background="@color/login_red">-->
+    <!--<TextView-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:text="删除"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_toLeftOf="@+id/delete">-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/c_count"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/minus"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:gravity="center">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="-"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="@dimen/line"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:background="@color/white"-->
+    <!--android:layout_toRightOf="@id/minus"/>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/plus"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:gravity="center">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="+"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/rl_count"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_toRightOf="@+id/minus"-->
+    <!--android:layout_toLeftOf="@+id/plus"-->
+    <!--android:gravity="center">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_count"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="1"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="@dimen/line"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:background="@color/white"-->
+    <!--android:layout_toRightOf="@id/rl_count"/>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/line"-->
+    <!--android:background="@color/white"-->
+    <!--android:layout_below="@+id/minus"-->
+    <!--android:orientation="horizontal"/>-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_alignParentBottom="true">-->
+
+    <!--<TextView-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:textSize="12sp"-->
+    <!--android:text="@string/test2" />-->
+
+
+    <!--</LinearLayout>-->
+
+
+    <!--</RelativeLayout>-->
+
+    <!--</RelativeLayout>-->
+    <View
+        android:layout_below="@+id/rl_table"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#EFEFEF" />
+
+</RelativeLayout>

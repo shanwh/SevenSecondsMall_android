@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/mar_10">
+
+    <ImageView
+        android:id="@+id/pic_goods"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_default" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/pic_goods"
+        android:paddingLeft="@dimen/mar_10">
+
+        <TextView
+            android:id="@+id/tag_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="物流状态"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize4" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tag_status"
+            android:layout_marginLeft="@dimen/mar_8"
+            android:layout_toRightOf="@+id/tag_status"
+            android:text=""
+            android:textColor="@color/green"
+            android:textSize="@dimen/textSize4" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_status"
+            android:layout_marginTop="@dimen/mar_3"
+            android:lineSpacingExtra="@dimen/mar_5"
+            android:maxLines="1"
+            android:textSize="@dimen/textSize4"
+            tools:text="承运来源：" />
+
+        <TextView
+            android:id="@+id/logistics_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content"
+            android:layout_marginTop="@dimen/mar_3"
+            android:text="运单编号："
+            android:textColor="@color/colorGray2"
+            android:textSize="@dimen/textSize4" />
+
+        <TextView
+            android:id="@+id/official_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logistics_id"
+            android:layout_marginTop="@dimen/mar_3"
+            android:text="官方电话："
+            android:textColor="@color/colorGray2"
+            android:textSize="@dimen/textSize4" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <include layout="@layout/base_toolbar"/>
+    <include layout="@layout/toolbar_line"/>
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" android:visibility="gone"
+        android:background="@color/light_red">
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mar_15"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="银行卡管理"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_item"
+        android:layout_margin="@dimen/mar_15"
+        android:background="@drawable/bank_card_bg">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mar_35"
+            android:layout_margin="@dimen/mar_15"
+            android:scaleType="fitStart"
+            android:layout_toLeftOf="@+id/tv_card_number"
+            android:src="@drawable/combo"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_card_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorBottomBlack"
+            android:text="**** **** **** 1234"
+            android:paddingRight="@dimen/mar_15"
+            android:layout_centerVertical="true"
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/mar_10"
+        android:paddingBottom="@dimen/mar_10"
+        android:paddingLeft="@dimen/mar_25"
+        android:paddingRight="@dimen/mar_25"
+        android:layout_marginTop="@dimen/mar_25"
+        android:text="解除绑定"
+
+        android:textColor="@color/white"
+        />
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/mar_5"
+        android:background="@drawable/logistics_bg"
+        android:paddingBottom="@dimen/mar_5"
+        android:paddingLeft="@dimen/mar_10"
+        android:paddingRight="@dimen/mar_10"
+        android:paddingTop="@dimen/mar_5"
+        android:text="2017年2月25日"
+        android:textColor="@color/white" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time"
+        android:layout_marginTop="@dimen/margin_size_10"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/mar_15">
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_get"
+            android:textColor="@color/green"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_ship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_status"
+            android:layout_toRightOf="@id/tv_status"
+            android:text="(顺丰快递)"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/pic_goods"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@id/tv_status"
+            android:layout_marginTop="@dimen/margin_size_10"
+            android:src="@drawable/ic_default" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/pic_goods"
+            android:layout_marginLeft="@dimen/mar_15"
+            android:layout_marginTop="@dimen/mar_15"
+            android:layout_toRightOf="@id/pic_goods"
+            android:lineSpacingExtra="@dimen/mar_5"
+            android:maxLines="2"
+            tools:text="@string/test7" />
+
+        <TextView
+            android:id="@+id/logistics_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/pic_goods"
+            android:layout_marginBottom="@dimen/mar_15"
+            android:layout_marginLeft="@dimen/mar_15"
+            android:layout_marginTop="@dimen/margin_size_10"
+            android:layout_toRightOf="@id/pic_goods"
+            android:text="运单编号：213132132321"
+            android:textColor="@color/colorGray2"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

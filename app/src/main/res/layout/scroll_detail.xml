@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+
+                <cn.bingoogolapple.bgabanner.BGABanner
+                    android:id="@+id/banner_good_flip"
+                    style="@style/BannerDefaultStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    app:banner_indicatorGravity="bottom|center_horizontal"
+                    app:banner_pointDrawable="@drawable/bga_banner_selector_point_solid1"
+                    app:banner_transitionEffect="defaultEffect" />
+
+
+
+
+
+            <!--<RelativeLayout-->
+            <!--android:layout_below="@+id/banner_good"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="@color/white">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/goods_name"-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="17sp"-->
+            <!--android:layout_marginLeft="@dimen/margin_size_10"-->
+            <!--android:text="@string/test"/>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_toLeftOf="@+id/l_share"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_marginTop="@dimen/margin_size_10"-->
+            <!--android:layout_margin="@dimen/margin_size_10"-->
+            <!--android:layout_width="@dimen/line"-->
+            <!--android:background="@color/black"/>-->
+
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/l_share"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="@dimen/margin_size_10">-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:src="@drawable/share"/>-->
+
+            <!--<TextView-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:textSize="15sp"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:gravity="center"-->
+            <!--android:text="分享" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/priceleft"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:textSize="18sp"-->
+            <!--android:textColor="@color/login_red"-->
+            <!--android:layout_below="@+id/goods_name"-->
+            <!--android:layout_marginTop="@dimen/mar_15"-->
+            <!--android:layout_marginLeft="@dimen/margin_size_10"-->
+            <!--android:text="￥"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/price"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:textSize="18sp"-->
+            <!--android:textColor="@color/login_red"-->
+            <!--android:layout_below="@+id/goods_name"-->
+            <!--android:layout_toRightOf="@+id/priceleft"-->
+            <!--android:layout_marginTop="@dimen/mar_15"-->
+            <!--android:layout_marginLeft="@dimen/margin_size_10"-->
+            <!--android:text="2500"/>-->
+
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/goods_msg"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_below="@+id/priceleft"-->
+            <!--android:layout_marginTop="@dimen/margin_size_10">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center">-->
+
+            <!--<TextView-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:textSize="15sp"-->
+            <!--android:text="@string/express"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/cost_send"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:textSize="15sp"-->
+            <!--android:layout_marginLeft="@dimen/mar_5"-->
+            <!--android:text="0.0"/>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center">-->
+
+            <!--<TextView-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:textSize="15sp"-->
+            <!--android:text="@string/monthsale"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/sale_count"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:textSize="15sp"-->
+            <!--android:layout_marginLeft="@dimen/mar_5"-->
+            <!--android:text="0笔"/>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/add"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:textSize="15sp"-->
+            <!--android:text="@string/test5"/>-->
+
+            <!--</LinearLayout>-->
+
+
+            <!--</LinearLayout>-->
+
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/get_msg"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_below="@+id/goods_msg"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_marginTop="@dimen/mar_15"-->
+            <!--android:gravity="center_vertical">-->
+
+
+            <!--<ImageView-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_marginLeft="@dimen/margin_size_10"-->
+            <!--android:src="@drawable/star"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/score"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/margin_size_10"-->
+            <!--android:textSize="15sp"-->
+            <!--android:text="200"/>-->
+
+            <!--<TextView-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:textSize="15sp"-->
+            <!--android:text="@string/getscore"/>-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_marginLeft="@dimen/margin_size_10"-->
+            <!--android:src="@drawable/sale"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/getsale"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:textSize="15sp"-->
+            <!--android:layout_marginLeft="@dimen/margin_size_10"-->
+            <!--android:text="@string/getsale"/>-->
+
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_height="@dimen/line"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="@color/background_color"-->
+            <!--android:layout_below="@+id/get_msg"/>-->
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/rl_attrs"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_below="@+id/get_msg"-->
+            <!--android:gravity="center_vertical">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/attrs"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:textSize="15sp"-->
+            <!--android:layout_marginLeft="@dimen/margin_size_10"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:text="@string/attribute"/>-->
+
+            <!--<TextView-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:textSize="15sp"-->
+            <!--android:layout_toRightOf="@+id/attrs"-->
+            <!--android:layout_marginLeft="@dimen/mar_80"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:text="@string/selectattrs"/>-->
+
+            <!--<ImageView-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginTop="@dimen/mar_5"-->
+            <!--android:layout_marginBottom="@dimen/mar_5"-->
+            <!--android:src="@drawable/jiantou"/>-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/view_content"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/default_loading_pic"-->
+            <!--android:layout_below="@+id/rl_attrs"/>-->
+
+
+            <!--</RelativeLayout>-->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/banner_good"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_height="@dimen/height_goods_detail"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/goods_name"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/margin_size_10"
+                        android:layout_marginTop="@dimen/margin_size_10"
+                        tools:text="xiandai12312313131231321"/>
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_size_10"
+                        android:layout_marginTop="@dimen/mar_5"
+                        android:orientation="horizontal">
+
+                        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textColor="@color/login_red"
+                            android:text="@string/icon_rmb"/>
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textColor="@color/login_red"
+                            tools:text="2313"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_height="@dimen/height_goods_detail"
+                    android:layout_marginTop="@dimen/margin_size_4"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pop_attrs"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="qeqwe"/>
+
+                    <TextView
+                        android:id="@+id/good_select"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#7c7c7c"
+                        android:layout_marginLeft="@dimen/margin_size_10"
+                        android:text="已选"/>
+
+                    <LinearLayout
+                        android:layout_toRightOf="@+id/good_select"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_size_10"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/select_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:text="商品名称"/>
+
+                        <TextView
+                            android:id="@+id/select_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_size_10"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            tools:text="数量1"/>
+
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_height="@dimen/height_goods_detail"
+                    android:layout_marginTop="@dimen/margin_size_4"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pop_add"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="qeqwe"/>
+
+                    <TextView
+                        android:id="@+id/send"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#7c7c7c"
+                        android:layout_marginLeft="@dimen/margin_size_10"
+                        android:text="送至"/>
+
+                    <LinearLayout
+                        android:layout_toRightOf="@+id/send"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_size_10"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            tools:text="地点"/>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_height="@dimen/height_goods_detail"
+                    android:layout_marginTop="@dimen/margin_size_4"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pop_estimate"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="qeqwe"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/margin_size_10"
+                        android:text="商品评价"/>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+</ScrollView>

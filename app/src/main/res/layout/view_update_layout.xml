@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:paddingLeft="@dimen/mar_5"
+    android:paddingRight="@dimen/mar_5"
+    android:background="@drawable/button_bg"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mar_15"
+        android:layout_gravity="center"
+        android:gravity="center"
+        tools:text="发现新版本"
+        android:textColor="@color/colorBlueText" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:maxWidth="250dp"
+        android:padding="@dimen/mar_15"
+        android:lineSpacingExtra="@dimen/mar_5"
+        android:gravity="center"
+        tools:text="您已是最新版本您已是最新版本您已是最新版本您已是最新版本"
+        android:textColor="@color/colorGray2" />
+
+    <TextView
+        android:id="@+id/tv_update_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="马上更新"
+        android:paddingLeft="@dimen/mar_15"
+        android:paddingRight="@dimen/mar_15"
+        android:paddingTop="@dimen/mar_5"
+        android:paddingBottom="@dimen/mar_5"
+        android:background="@drawable/button_shape2"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/mar_15"
+        />
+</LinearLayout>

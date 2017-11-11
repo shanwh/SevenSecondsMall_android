@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/margin_size_10"
+            android:layout_marginLeft="@dimen/mar_5"
+            android:text="@string/back"/>
+
+        <TextView
+            android:id="@+id/order_text"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/margin_size_10"
+            android:layout_marginTop="@dimen/margin_size_10"
+            tools:text="订单编号：2132132132132132123"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/mar_5">
+
+        <ImageView
+            android:id="@+id/goods_img"
+            android:layout_height="55dp"
+            android:layout_width="88dp"
+            android:src="@drawable/s_icon" />
+
+        <TextView
+            android:id="@+id/goods_text"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/textSize1"
+            tools:text="商品1"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="总价：21212"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_size_10"/>
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_toLeftOf="@+id/price"
+            android:layout_marginRight="@dimen/mar_5"
+            android:text="总计：1件"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_head_layout" />
+    <include layout="@layout/base_toolbar"/>
+    <include layout="@layout/toolbar_line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/store_photo"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mar_10"
+            android:layout_marginRight="@dimen/mar_10"
+            android:src="@drawable/ic_default" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mar_8"
+            android:layout_toRightOf="@+id/store_photo">
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                android:id="@+id/if_store_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/mar_8"
+                android:layout_marginTop="@dimen/mar_8"
+                android:text="@string/icon_store1"
+                android:textColor="@color/colorIconYellow"
+                android:textSize="@dimen/textSize3" />
+
+            <TextView
+                android:id="@+id/store_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/if_store_icon"
+                android:layout_toRightOf="@id/if_store_icon"
+                android:text="张小五的铺子"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tag_salesNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/if_store_icon"
+                android:layout_marginRight="@dimen/mar_3"
+                android:layout_marginTop="@dimen/mar_3"
+                android:text="销量"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize5" />
+
+            <TextView
+                android:id="@+id/tv_salesNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tag_salesNum"
+                android:layout_marginRight="@dimen/mar_8"
+                android:layout_toRightOf="@+id/tag_salesNum"
+                android:text="152"
+                android:textColor="@color/red"
+                android:textSize="@dimen/textSize5" />
+
+            <TextView
+                android:id="@+id/tv_total_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv_salesNum"
+                android:layout_alignBottom="@+id/tag_salesNum"
+                android:layout_toRightOf="@id/tv_salesNum"
+                android:text="共234件商品"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize5" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="47dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/mar_10"
+            android:background="@drawable/store_collect_white"
+            android:gravity="center"
+            android:text="收藏"
+            android:textColor="@color/holo_orange_light"
+            android:textSize="@dimen/textSize5" />
+    </RelativeLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rd1"
+            android:checked="true"
+            style="@style/TitleStyle"
+            android:text="店铺首页" />
+
+        <RadioButton
+            android:id="@+id/rd2"
+            style="@style/TitleStyle"
+            android:text="全部商品" />
+
+        <RadioButton
+            android:id="@+id/rd3"
+            style="@style/TitleStyle"
+            android:text="销量" />
+
+        <RadioButton
+            android:id="@+id/rd4"
+            style="@style/TitleStyle"
+            android:text="最新" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivLine"
+            android:layout_marginRight="@dimen/mar_8"
+            android:layout_width="60dp"
+            android:layout_height="3dp"
+            android:layout_marginLeft="@dimen/mar_8"
+            android:background="@color/app_theme" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_store_class"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#03000000"
+            android:gravity="center"
+            android:text="@string/str_store_classification"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="37dp"
+            android:background="@color/colorGray2" />
+
+        <TextView
+            android:id="@+id/tv_store_introduce"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#03000000"
+            android:gravity="center"
+            android:text="@string/str_store_introduce"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize5" />
+    </LinearLayout>
+
+</LinearLayout>

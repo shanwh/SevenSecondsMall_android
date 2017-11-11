@@ -1,0 +1,174 @@
+<android.support.v4.widget.DrawerLayout android:layout_width="match_parent"
+    android:id="@+id/drawerLayout"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/activity_transfer"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="end"
+        android:background="@color/white" android:clickable="true"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="加速时间"  android:paddingLeft="12dp"  android:paddingTop="20dp"
+            android:textColor="#333333"
+            android:textSize="15dp"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"  android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_marginTop="13dp"
+            android:id="@+id/rv_transfer"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="剩余金额区间"  android:paddingLeft="12dp"
+            android:textColor="#333333"
+            android:textSize="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="13dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"  android:paddingLeft="12dp"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="100dp"
+                android:textSize="13dp"
+                android:background="@drawable/item_bg_c8"
+                android:id="@+id/et_min_price"
+                android:textColor="#333333" android:inputType="numberDecimal"
+                android:textColorHint="#c8c8c8"
+                android:hint="最低金额" android:gravity="center"
+                android:layout_height="29dp" />
+            <TextView
+                android:layout_width="8dp"
+                android:background="#c8c8c8"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_height="1dp" />
+            <EditText
+                android:layout_width="100dp"
+                android:textSize="13dp"
+                android:id="@+id/et_max_price"
+                android:background="@drawable/item_bg_c8"
+                android:textColor="#333333"
+                android:textColorHint="#c8c8c8" android:inputType="numberDecimal"
+                android:hint="最高金额" android:gravity="center"
+                android:layout_height="29dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="进度"
+            android:textColor="#333333"  android:paddingLeft="12dp"
+            android:textSize="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="13dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"  android:paddingLeft="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="100dp"
+                android:textSize="13dp"
+                android:background="@drawable/item_bg_c8"
+                android:id="@+id/et_min_progress"
+                android:textColor="#333333" android:inputType="numberDecimal"
+                android:textColorHint="#c8c8c8"
+                android:hint="最低进度(0-100)" android:gravity="center"
+                android:layout_height="29dp" />
+            <TextView
+                android:layout_width="8dp"
+                android:background="#c8c8c8"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_height="1dp" />
+            <EditText
+                android:layout_width="100dp"
+                android:textSize="13dp"
+                android:id="@+id/et_max_progress" android:inputType="numberDecimal"
+                android:background="@drawable/item_bg_c8"
+                android:textColor="#333333"
+                android:textColorHint="#c8c8c8"
+                android:hint="最高进度(0-100)" android:gravity="center"
+                android:layout_height="29dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="折扣"
+            android:textColor="#333333"  android:paddingLeft="12dp"
+            android:textSize="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="13dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"  android:paddingLeft="12dp"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="100dp"
+                android:textSize="13dp"
+                android:background="@drawable/item_bg_c8"
+                android:id="@+id/et_min_discount"
+                android:textColor="#333333" android:inputType="numberDecimal"
+                android:textColorHint="#c8c8c8"
+                android:hint="最低折扣(0-100)" android:gravity="center"
+                android:layout_height="29dp" />
+            <TextView
+                android:layout_width="8dp"
+                android:background="#c8c8c8"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_height="1dp" />
+            <EditText
+                android:layout_width="100dp"
+                android:textSize="13dp"
+                android:id="@+id/et_max_discount"
+                android:background="@drawable/item_bg_c8"
+                android:textColor="#333333" android:inputType="numberDecimal"
+                android:textColorHint="#c8c8c8"
+                android:hint="最高折扣(0-100)" android:gravity="center"
+                android:layout_height="29dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="重置"
+                android:textColor="#a3a3a3"
+                android:background="#f3f4f5"
+                android:textSize="15dp"
+                android:id="@+id/reset"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="45dp" />
+            <TextView
+                android:text="确定"
+                android:id="@+id/sure"
+                android:textColor="#fefefe"
+                android:background="@color/app_theme"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="45dp" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yidu.sevensecondmall.views.widget.AutoLinnerlayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <cn.bingoogolapple.bgabanner.BGABanner
+        android:id="@+id/banner_main_flip"
+        style="@style/BannerDefaultStyle"
+        android:layout_width="match_parent"
+        android:layout_height="141dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:banner_indicatorGravity="bottom|center_horizontal"
+        app:banner_pointDrawable="@drawable/bga_banner_selector_point_solid1"
+        app:banner_transitionEffect="defaultEffect" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="@dimen/mar_5"
+        android:paddingBottom="@dimen/mar_5">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/mar_5"
+                android:background="@drawable/home_bg_1">
+
+                <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_centerInParent="true"
+                     android:text="@string/icon_clothing"
+                    android:textColor="@color/white"
+                     android:textSize="45sp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="服装城"
+                android:textSize="10sp"
+                android:textColor="@color/colorIdGray"
+                android:layout_marginTop="@dimen/mar_5"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/mar_5"
+                android:background="@drawable/home_bg_2">
+
+                <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/icon_eat"
+                    android:textColor="@color/white"
+                    android:textSize="45sp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="吃货街"
+                android:textSize="10sp"
+                android:textColor="@color/colorIdGray"
+                android:layout_marginTop="@dimen/mar_5"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/mar_5"
+                android:background="@drawable/home_bg_3">
+
+                <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/icon_make_up"
+                    android:textColor="@color/white"
+                    android:textSize="45sp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="美妆护肤"
+                android:textSize="10sp"
+                android:textColor="@color/colorIdGray"
+                android:layout_marginTop="@dimen/mar_5"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/mar_5"
+                android:background="@drawable/home_bg_4">
+
+                <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/icon_gold"
+                    android:textColor="@color/white"
+                    android:textSize="45sp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="黄金专区"
+                android:textSize="10sp"
+                android:textColor="@color/colorIdGray"
+                android:layout_marginTop="@dimen/mar_5"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/mar_5"
+                android:background="@drawable/home_bg_5">
+
+                <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/icon_discuss"
+                    android:textColor="@color/white"
+                    android:textSize="45sp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="讨论专区"
+                android:textSize="10sp"
+                android:textColor="@color/colorIdGray"
+                android:layout_marginTop="@dimen/mar_5"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</com.yidu.sevensecondmall.views.widget.AutoLinnerlayout>

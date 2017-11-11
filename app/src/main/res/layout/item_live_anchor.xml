@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="308dp"
+    android:orientation="vertical">
+
+    <SurfaceView
+        android:id="@+id/item_surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="115dp"
+        android:layout_height="19dp"
+        android:layout_margin="@dimen/mar_8"
+        android:background="@drawable/watch_bg_number"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/live_status"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/islive"
+            android:gravity="center"
+            android:text="直播中"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize5" />
+
+        <TextView
+            android:id="@+id/tv_watcher_number"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:text="5693观看"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize5" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_bg_white_5">
+
+        <ImageView
+            android:id="@+id/seller_photo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/mar_10" />
+
+        <TextView
+            android:id="@+id/seller_set_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mar_8"
+            android:layout_toRightOf="@+id/seller_photo"
+            android:lines="1"
+            android:maxWidth="190dp"
+            android:text="一百种搭配的方法" />
+
+        <TextView
+            android:id="@+id/seller_store_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seller_set_title"
+            android:layout_marginBottom="@dimen/mar_8"
+            android:layout_toRightOf="@+id/seller_photo"
+            android:lines="1"
+            android:maxWidth="190dp"
+            android:text="一百种搭配的方法" />
+
+        <RelativeLayout
+            android:id="@+id/rl_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/mar_13"
+            android:gravity="center_horizontal">
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                android:id="@+id/like_heart_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/icon_brand"
+                android:textSize="@dimen/textSize2" />
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/icon_heart"
+                android:textSize="@dimen/textSize2" />
+
+            <TextView
+                android:id="@+id/likes_number"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@id/like_heart_bg"
+                android:text="20000" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.yidu.sevensecondmall.views.anim.HeartLayout
+        android:id="@+id/heart_layout"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"/>
+
+</FrameLayout>

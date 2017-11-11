@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/mar_14">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/mar_45"
+        android:layout_marginRight="@dimen/mar_45"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/socket"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="@dimen/mar_25"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/icon_he"/>
+
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+
+            <FrameLayout
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/btn_bg"
+                    />
+
+
+                <LinearLayout
+                    android:layout_height="43dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/login_input">
+
+                    <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/app_theme"
+                        android:text="@string/telnum"
+                        android:layout_marginLeft="8dp"/>
+
+                    <EditText
+                        android:id="@+id/r_telnum"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@null"
+                        android:hint="@string/inputNum"
+                        android:layout_marginLeft="@dimen/mar_7"
+                        android:singleLine="true"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+
+            <FrameLayout
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="14dp">
+
+                <LinearLayout
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/btn_bg"
+                    />
+
+                <LinearLayout
+                    android:layout_height="43dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/login_input">
+
+                    <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/app_theme"
+                        android:text="@string/icon_password"
+                        android:layout_marginLeft="8dp"/>
+
+                    <EditText
+                        android:id="@+id/r_pw"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@null"
+                        android:maxLength="12"
+                        android:hint="@string/inputpw2"
+                        android:layout_marginLeft="@dimen/mar_7"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        android:inputType="textPassword"/>
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_marginTop="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/btn_bg"
+                    />
+
+                <LinearLayout
+                    android:layout_height="43dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/login_input">
+
+                    <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/app_theme"
+                        android:text="@string/icon_password"
+                        android:layout_marginLeft="8dp"/>
+
+                    <EditText
+                        android:id="@+id/r_pw2"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@null"
+                        android:hint="@string/inputpw3"
+                        android:maxLength="12"
+                        android:layout_marginLeft="@dimen/mar_7"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="14dp">
+
+                <LinearLayout
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/btn_bg"
+                    />
+
+                <LinearLayout
+                    android:layout_height="43dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/login_input">
+
+                    <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/app_theme"
+                        android:text="@string/code"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/getCNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/getCNum"
+                            android:textColor="@color/app_theme"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:textSize="14sp"
+                            android:layout_marginRight="@dimen/margin_size_10"/>
+
+                        <EditText
+                            android:id="@+id/r_cnum"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:background="@null"
+                            android:hint="@string/inputCNum"
+                            android:layout_marginLeft="@dimen/mar_7"
+                            android:singleLine="true"
+                            android:layout_toLeftOf="@+id/getCNum"
+                            android:textSize="14sp"/>
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mar_13"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="推荐人手机号码"
+                    android:layout_marginLeft="@dimen/mar_13"
+                    android:layout_gravity="center"
+                    />
+
+                <EditText
+                    android:background="@drawable/login_input"
+
+                    android:id="@+id/et_invite_mobile"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:hint="请输入推荐手机号码"
+                    android:layout_marginLeft="@dimen/mar_7"
+                    android:padding="@dimen/mar_13"
+                    android:singleLine="true"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal">
+
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:layout_height="55dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/mar_25">
+
+                <LinearLayout
+                    android:layout_height="60dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/btn_bg" />
+
+                <Button
+                    android:id="@+id/resigter"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/login_btn"
+                    android:layout_gravity="center_horizontal"
+                    android:text="立即注册"
+                    android:textColor="@color/white"/>
+
+            </FrameLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+

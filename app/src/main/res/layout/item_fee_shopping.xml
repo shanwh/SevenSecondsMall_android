@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        >
+
+    <com.yidu.sevensecondmall.views.widget.RoundProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/mar_80"
+        android:layout_height="@dimen/mar_80"
+        android:layout_margin="@dimen/mar_5"
+        android_custom:roundColor="@color/colorBottomBlack"
+        android_custom:roundProgressColor="@color/colorPb"
+        android_custom:textColor="@color/color_discount"
+        android_custom:textIsDisplayable="true"
+        android_custom:roundWidth="@dimen/mar_3"
+        android_custom:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_present"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="27sp"
+            android:textColor="@color/colorPbText"
+            android:text="65"
+            android:textStyle="italic"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_present"
+            android:layout_toRightOf="@id/tv_present"
+            android:textStyle="italic"
+            android:text="%"
+            android:textSize="11sp"
+            android:textColor="@color/colorBottomBlack"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/mar_15">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单编号:" />
+
+            <TextView
+                android:id="@+id/tv_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="025184654813554"
+                android:textColor="@color/colorBottomBlack" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/mar_5"
+            android:layout_marginBottom="@dimen/mar_5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="付款日期:" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017-09-09"
+                android:textColor="@color/colorBottomBlack" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mar_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单金额:" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="288.00元"
+                android:textColor="@color/colorBottomBlack" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mar_7"
+        android:layout_below="@+id/rl_pb"
+        android:background="@color/colorHomeBackground" />
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/mar_80"
+    android:paddingRight="@dimen/mar_80"
+    android:background="@drawable/alertdiag_bg"
+    >
+
+    <ImageView
+        android:layout_width="84dp"
+        android:layout_height="62dp"
+        android:src="@drawable/icon_identification"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/mar_15"
+        android:layout_marginBottom="@dimen/mar_25"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+
+        android:lineSpacingExtra="@dimen/mar_3"
+        android:text="温馨提示：绑定银行卡、申请VIP会员、申请商家需要先完成实名认证"
+        />
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape"
+        android:paddingLeft="@dimen/mar_45"
+        android:paddingRight="@dimen/mar_45"
+        android:paddingTop="@dimen/mar_10"
+        android:paddingBottom="@dimen/mar_10"
+        android:layout_marginTop="@dimen/mar_25"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="立即实名"
+        android:layout_marginBottom="@dimen/mar_35"
+        />
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<include layout="@layout/base_toolbar"/>
+    <RelativeLayout
+        android:id="@+id/rl_head" android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorLightRedTr">
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mar_15"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="实名认证"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/mar_15"
+            android:text="编辑"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_connect"
+            style="@style/style_tv_request"
+            android:text="  真实姓名  " />
+
+        <EditText
+            android:id="@+id/et_connect"
+            style="@style/style_et_request"
+            android:layout_toRightOf="@+id/tv_connect"
+            android:hint="请输入真实姓名"
+            android:textColor="@color/colorGray2"
+            android:textCursorDrawable="@null" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_card_number"
+            style="@style/style_tv_request"
+            android:text="身份证号码" />
+
+        <EditText
+            android:id="@+id/et_card_number"
+            style="@style/style_et_request"
+            android:layout_toRightOf="@+id/tv_card_number"
+            android:hint="请输入身份证号码"
+            android:textColor="@color/colorGray2"
+            android:textCursorDrawable="@null" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:padding="@dimen/mar_15"
+        android:orientation="vertical"
+        >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mar_35"
+            android:text="提示：完成实名认证后，您的账号将会得到更完美的保护~"
+            />
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:padding="@dimen/mar_15"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="提交"
+            android:layout_marginLeft="@dimen/mar_45"
+            android:layout_marginRight="@dimen/mar_45"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/mar_25"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

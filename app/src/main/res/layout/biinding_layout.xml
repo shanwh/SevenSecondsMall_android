@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title" android:visibility="gone"
+        layout="@layout/title_head_layout"/>
+
+    <include layout="@layout/base_toolbar" android:id="@+id/toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/success_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="164dp"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/icon_success"
+            android:textColor="@color/green"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:text="手机更换成功"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="绑定手机号,可以提高账号等级"
+            android:textColor="@color/colorHint"
+            android:padding="@dimen/margin_size_10"/>
+
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/margin_size_10"
+            android:background="@color/white">
+
+
+            <EditText
+                android:id="@+id/tel_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入手机号"
+                android:layout_toLeftOf="@+id/delete"
+                android:padding="@dimen/mar_15"
+                android:textSize="12sp"
+                android:background="@null"/>
+
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                android:id="@+id/delete"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/icon_cancel"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/check"
+                android:layout_marginRight="@dimen/margin_size_10"/>
+
+            <TextView
+                android:id="@+id/check"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/round_edittext"
+                android:textColor="@color/white"
+                android:text="发送验证码"
+                android:padding="@dimen/mar_5"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_size_10"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/mar_3">
+
+            <EditText
+                android:id="@+id/check_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="短信验证码"
+                android:textSize="12sp"
+                android:padding="@dimen/mar_15"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_first_bind"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/mar_3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推荐人号码"
+                android:textSize="12sp"
+                android:padding="@dimen/mar_15"
+                />
+
+            <EditText
+                android:id="@+id/et_invited"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="请填写推荐人号码"
+                android:textSize="12sp"
+                android:padding="@dimen/mar_15"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_height="wrap_content"
+            android:layout_width="230dp"
+            android:background="@drawable/round_edittext"
+            android:layout_marginTop="@dimen/mar_24"
+            android:layout_gravity="center_horizontal"
+            android:text="验证并且绑定"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/mar_10"
+    android:paddingLeft="@dimen/mar_15"
+    android:paddingRight="@dimen/mar_15"
+    android:paddingTop="@dimen/mar_10">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:layout_centerHorizontal="true"
+        android:text="温馨提示"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_below="@+id/tv"
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="@dimen/mar_5"
+        android:padding="@dimen/mar_5"
+        android:layout_marginBottom="@dimen/mar_5"
+        android:background="@null"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="确认从收藏夹移除吗"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_below="@+id/tv_tip"
+        android:layout_above="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/mar_5"
+        android:layout_alignLeft="@+id/ll"
+        android:layout_alignRight="@+id/ll"
+        android:background="@color/colorGray2" >
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_below="@id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/mar_5"
+            android:paddingLeft="@dimen/mar_25"
+            android:paddingRight="@dimen/mar_25"
+            android:paddingTop="@dimen/mar_5"
+            android:textSize="16sp"
+            android:text="取消" />
+
+
+        <TextView
+            android:id="@+id/sure"
+            android:layout_toRightOf="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="@dimen/mar_5"
+            android:paddingLeft="@dimen/mar_25"
+            android:paddingRight="@dimen/mar_25"
+            android:paddingTop="@dimen/mar_5"
+            android:textSize="16sp"
+            android:textColor="@color/light_red"
+            android:text="确认" />
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

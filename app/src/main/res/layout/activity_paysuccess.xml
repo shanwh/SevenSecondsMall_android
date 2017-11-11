@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/title_head_layout" android:visibility="gone"/>
+        <include layout="@layout/base_toolbar"/>
+
+        <!--<com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:paddingTop="@dimen/padding_top"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="@dimen/margin_size_10"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="20sp"-->
+            <!--android:text="@string/icon_more"/>-->
+
+    </RelativeLayout>
+
+    <include layout="@layout/toolbar_line"/>
+    <LinearLayout
+        android:layout_height="213dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/app_theme"
+        android:gravity="center">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:layout_marginRight="@dimen/mar_15"
+            android:text="@string/haspay"/>
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:text="@string/icon_wait_for_send"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="@dimen/margin_size_10"
+            android:layout_marginRight="@dimen/margin_size_10">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/buyer_txt"
+                android:layout_toRightOf="@+id/icon_loc"
+                android:layout_marginTop="@dimen/margin_size_10"/>
+
+            <TextView
+                android:id="@+id/buyer_txt"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="齐天大圣 1500000000"
+                android:layout_marginTop="@dimen/margin_size_10"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="12dp"
+            android:layout_marginLeft="@dimen/margin_size_10"
+            android:layout_marginRight="@dimen/margin_size_10">
+            >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="地址："
+                android:layout_toRightOf="@+id/icon_loc"
+                android:layout_marginTop="@dimen/margin_size_10"/>
+
+            <TextView
+                android:id="@+id/add_txt"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/add_test"
+                android:lineSpacingExtra="@dimen/mar_5"
+                android:layout_marginTop="@dimen/margin_size_10"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:padding="@dimen/mar_5"
+        android:layout_marginTop="1dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/priceleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mar_15"
+            android:layout_marginLeft="@dimen/mar_5"
+            android:text="@string/all_cost"
+            android:textColor="@color/login_red"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mar_15"
+            android:layout_marginLeft="@dimen/mar_5"
+            android:layout_toRightOf="@+id/priceleft"
+            android:text="500"
+            android:textColor="@color/login_red"/>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/priceleft"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/mar_24">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/readdetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:text="@string/readdetail"
+                    android:padding="@dimen/mar_5"
+                    android:background="@drawable/ps_text_shape"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/goback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/mar_5"
+                    android:textSize="15sp"
+                    android:text="@string/goback"
+                    android:gravity="center"
+                    android:background="@drawable/ps_text_shape"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_head" android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/light_red">
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mar_15"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/money_recharge"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_ali_pay"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/if_tv_icon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/mar_5"
+            android:text="@string/icon_ali_pay"
+            android:textColor="@color/btn_blue_normal"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/if_tv_icon1"
+            android:layout_marginLeft="@dimen/mar_10"
+            android:text="@string/ali" />
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/if_tv_choose1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:clickable="false"
+            android:gravity="right"
+            android:text="@string/icon_select"
+            android:textColor="@color/light_red"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_we_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/if_tv_icon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/mar_5"
+            android:text="@string/icon_we_chat"
+            android:textColor="@color/colorGreenFinish"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/if_tv_icon2"
+            android:layout_marginLeft="@dimen/mar_10"
+            android:text="微信支付" />
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/if_tv_choose2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:clickable="false"
+            android:gravity="right"
+            android:text="@string/icon_un_select"
+            android:textColor="@color/light_red"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/mar_10"
+        android:layout_marginTop="1dp"
+        android:background="@color/white">
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/if_tv_icon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/mar_5"
+            android:text="@string/icon_bank"
+            android:textColor="@color/colorIconYellow"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/tv_card_tip"
+            android:layout_toRightOf="@+id/if_tv_icon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mar_10"
+            android:text="储蓄卡" />
+
+        <TextView
+            android:id="@+id/tv_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_card_tip"
+            android:padding="@dimen/mar_15"
+            android:textColor="@color/colorBlueText"
+            tools:text="工商银行(0025)" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_card"
+            android:layout_below="@+id/tv_card"
+            android:paddingBottom="@dimen/mar_15"
+            android:paddingLeft="@dimen/mar_15"
+            android:text="单日交易限额¥50000.00" />
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/if_tv_to_bank_list"
+            style="@style/if_tv_my_set"
+            android:layout_centerVertical="false"
+            android:layout_alignParentRight="false"
+            android:padding="@dimen/mar_5"
+            android:layout_alignBottom="@+id/tv_card"
+            android:visibility="gone"
+            android:layout_alignTop="@+id/tv_card"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/tv_card"
+            android:textSize="16sp"
+            />
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/if_tv_choose3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:clickable="false"
+            android:gravity="right"
+            android:text="@string/icon_un_select"
+            android:textColor="@color/light_red"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_count_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mar_15"
+            android:text="金额(元)" />
+
+        <EditText
+            android:id="@+id/et_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_count_tip"
+            android:background="@null"
+            android:hint="请输入金额"
+            android:inputType="numberDecimal"
+            android:lineSpacingExtra="@dimen/mar_5"
+            android:padding="@dimen/mar_15"
+            android:textColor="@color/colorGray2"
+            android:textColorHint="@color/colorGray2"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/mar_20"
+        android:layout_marginRight="@dimen/mar_20"
+        android:layout_marginTop="@dimen/mar_15"
+        android:background="@drawable/to_buy_bg"
+        android:gravity="center"
+        android:padding="@dimen/mar_15"
+        android:text="下一步"
+        android:textColor="@color/white" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/if_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mar_5"
+            android:padding="@dimen/mar_10"
+            android:text="@string/icon_success"
+            android:textColor="@color/colorGreenFinish"
+            android:textSize="23sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/if_tv"
+            android:text="充值成功"
+            android:textColor="@color/colorGreenFinish" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_finish_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/mar_15"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="银行卡" />
+
+        <TextView
+            android:id="@+id/tv_finish_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="工商银行尾号0025"
+            android:textColor="@color/colorBlueText" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_finish_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/mar_15"
+        android:paddingLeft="@dimen/mar_15"
+        android:paddingRight="@dimen/mar_15"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金额(元)" />
+
+        <TextView
+            android:id="@+id/tv_finish_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="¥123456" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#ffffff</color>
+    <color name="colorPrimary">#F3F4F5</color>
+    <color name="colorPrimaryDark">#CECECE</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000000</color>
+    <color name="green">#45a728</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white1">#89FFFFFF</color>
+    <color name="white2">#33FFFFFF</color>
+    <color name="background_color">#F0F0F0</color>
+    <color name="grey">#666666</color>
+    <color name="login_red">#C40000</color>
+    <color name="red">#ff0000</color>
+    <color name="colorBottomRed">#c40000</color>
+    <color name="colorBottomBlack">#333333</color>
+    <color name="colorGray">#e5e5e5</color>
+    <color name="colorDraGray">#8a8a8a</color>
+    <color name="colorHomeHeadLineComment">#999999</color>
+    <color name="colorHomeHeadLineCommentTra">#50999999</color>
+    <color name="colorHomeBackground">#f0f0f0</color>
+    <color name="colorBannerGreen">#76ee00</color>
+    <color name="colorLiveBackground">#ffd102</color>
+    <color name="colorFightBackground">#45a728</color>
+    <color name="content_text">#333333</color>
+    <color name="umeng_socialize_divider">#E6E6E6</color>
+    <color name="umeng_socialize_list_item_bgcolor">#FFFFFF</color>
+    <color name="umeng_socialize_text_title">#464f61</color>
+    <color name="lv_color">#ffd102</color>
+    <color name="colorStroke">#cccccc</color>
+    <color name="colorThinWhite">#eeeeee</color>
+    <color name="colorChatEditTextBackground">#ffd102</color>
+    <color name="colorInvitedText">#505050</color>
+    <color name="yello_txt">#505050</color>
+    <color name="line_gray">#aaaaaa</color>
+    <color name="umeng_socialize_comments_bg">#F4F4F4</color>
+    <color name="umeng_socialize_color_group">#2c3035</color>
+    <color name="umeng_socialize_list_item_textcolor">#333333</color>
+    <color name="umeng_socialize_text_time">#999999</color>
+    <color name="umeng_socialize_text_friends_list">#959696</color>
+    <color name="umeng_socialize_text_share_content">#666666</color>
+    <color name="umeng_socialize_ucenter_bg">#EEEEEE</color>
+    <color name="umeng_socialize_text_ucenter">#595959</color>
+    <color name="umeng_socialize_edit_bg">#C4C4C4</color>
+    <color name="umeng_socialize_grid_divider_line">#F8F8F8</color>
+    <color name="emojicon_tab_selected">#D9D9D9</color>
+    <color name="emojicon_tab_nomal">#ffffff</color>
+    <color name="gray_normal">#666667</color>
+    <color name="list_itease_secondary_color">#888888</color>
+    <color name="list_itease_primary_color">#000</color>
+    <color name="common_bg">#fcfcfc</color>
+    <color name="common_bg2">#cfcfcf</color>
+    <color name="grid_state_pressed">#1Affffff</color>
+    <color name="grid_state_focused">#80000000</color>
+    <color name="top_bar_normal_bg">#00acff</color>
+    <color name="btn_gray_normal">#c0c0c0</color>
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_orange_light">#ffffbb33</color>
+    <color name="holo_red_light">#ffff4444</color>
+    <color name="btn_gray_pressed_status">#b5b5b6</color>
+    <color name="btn_blue_pressed">#0066FF</color>
+    <color name="btn_blue_normal">#1e90ff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="bgColor_overlay">#60000000</color>
+    <color name="app_theme">#eb8a2f</color>
+    <color name="colorHotItem">#7f969696</color>
+    <color name="color_font_gray">#9e9d9d</color>
+    <color name="button_bg_gray">#dddcdc</color>//按钮背景灰色
+    <color name="bg_view">#ffffffff</color>
+    <!--<color name="light_red">#f15353</color>//京东红-->
+    <color name="light_red">#eb8a2f</color>//京东红
+    <color name="colorArrGray">#cdcdcd</color>
+    <color name="colorLineGray">#dddddd</color>
+    <color name="colorTextGray">#6c6c6c</color>
+
+    <!--商品专区分类start-->
+    <color name="color_hot">#d7b547</color>
+    <color name="color_privilege">#55b889</color>
+    <color name="color_discount">#ffc515</color>
+    <color name="color_team_buying">#f06c06</color>
+    <!--商品专区分类end-->
+    <color name="colorLightRedTr">#eb8a2f</color>
+    <color name="colorLightRed">#ff4a3a</color>
+    <color name="colorWhiteGray">#efefef</color>
+    <color name="colorClassifyGray">#f8f8f8</color>
+
+    <color name="colorHint">#7c7c7c</color>
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="colorBlack">#303030</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhiteTr">#b2ffffff</color>
+    <color name="colorGray2">#7c7c7c</color>
+
+    <!--刷新控件-->
+    <color name="rll_layout_bg_color">#eeeeee</color>
+    <color name="rll_text_color">#666666</color>
+
+    <color name="colorDing">#f6f6f6</color>
+
+
+    <color name="un_select_color">#efefef</color>
+    <color name="select_color">#e96c65</color>
+    <color name="tran">#00000000</color>
+    <color name="qr_code_flashlight_bg">#66000000</color>
+    <color name="qr_code_finder_mask">#80000000</color>
+    <color name="qr_code_flash_light_text_color">#66FFFFFF</color>
+    <color name="qr_code_finder_frame">#FFFFFFFF</color>
+    <color name="qr_code_finder_laser">#ef8394</color>
+    <color name="qr_code_white">#FFFFFFFF</color>
+    <color name="colorIconYellow">#fcc101</color>
+
+    <color name="colorPlayBtn">#33000000</color>
+    <color name="colorPlayStatusRed">#33e96c65</color>
+
+    <color name="colorMoney">#fddf69</color>
+    <color name="colorBlueText">#348cde</color>
+    <color name="colorGreenFinish">#62b900</color>
+
+    <color name="colorMyHui">#f5c131</color>
+    <color name="colorMyShi">#2da2e0</color>
+    <color name="colorMySha">#ff3333</color>
+    <color name="colorMyHuo">#2ad1c6</color>
+
+    <color name="colorHomeMsg">#99000000</color>
+    <color name="colorProgressBlue">#0094e1</color>
+    <color name="colorProgressGray">#c8c8c8</color>
+    <color name="colorIdGray">#919191</color>
+    <color name="colorDGray">#191919</color>
+    <color name="colorHomeFree">#e5ffffff</color>
+    <color name="colorHomeFree2">#7feb843b</color>
+    <color name="colorPb">#eb843b</color>
+    <color name="colorPbText">#df2f24</color>
+    <color name="colorHome1">#f2305a</color>
+    <color name="colorHome2">#fcb232</color>
+    <color name="colorHome3">#f52e7f</color>
+    <color name="colorHome4">#eb8a2f</color>
+    <color name="colorHome5">#30c0f0</color>
+    <color name="colorHome6">#28b75c</color>
+
+    <color name="colorHomeFreeBg">#9f9f9f</color>
+
+    <color name="color_phone_pay">#0091db</color>
+    <color name="color_movie">#fa5113</color>
+    <color name="color_white_line">#ccac6e</color>
+    <color name="color_life_pay">#11b66a</color>
+    <color name="color_buy_air">#009fea</color>
+    <color name="color_back_money">#f55a45</color>
+
+    <color name="colorMyWallet">#ff9500</color>
+    <color name="colorMyCollect">#f16c5f</color>
+    <color name="colorMyServer">#1295db</color>
+    <color name="colorGreen">#9f9f9f</color>
+    <color name="colorDingText">#404040</color>
+
+    <color name="colorPbOut">#bdbbb9</color>
+    <color name="colorPbIn">#d7d5d1</color>
+    <color name="colorPbOut1">#fe5a37</color>
+    <color name="colorPbIn1">#ffa016</color>
+    <color name="colorOut">#66fe5a37</color>
+    <color name="colorIn">#66ffa016</color>
+    <color name="colorCircleBg">#ccffffff</color>
+    <color name="colorGreenPb">#06cc7d</color>
+    <color name="colorVipBlack">#4d4d4d</color>
+    <!--观看人数红-->
+    <color name="colorRedWatchBg" >#c416ab</color>
+    <color name="colorAssignmentText">#ede2cb</color>
+    <color name="colorAssignmentBtn">#eb8b2e</color>
+
+    <color name="colorCancelFailed">#f97070</color>
+    <!--背景灰色-->
+    <color name="layout_bg_gray">#656160</color>
+
+    <color name="colorliveStart">#dc9730</color>
+    <!--关注红-->
+    <color name="attention_bg_red">#FF2851</color>
+    <color name="colorAttention_orange">#e68a2e</color>
+
+
+    <!--新版颜色 -->
+    <color name="mainTextColor">#5c5c5c</color>
+    <color name="textLine">#e6e6e6</color>
+    <color name="textColor">#ff8d23</color>
+    <color name="textColor_bg">#333333</color>
+    <color name="background">#f3f4f5</color>
+    <color name="verticalTextColor">#a3a3a3</color>
+    <color name="f6bg">#f6f6f6</color>
+    <color name="textDark">#3a3634</color>
+    <color name="line_btn">#BBBBBB</color>
+    <color name="colorRoomGet">#5c5a59</color>
+</resources>

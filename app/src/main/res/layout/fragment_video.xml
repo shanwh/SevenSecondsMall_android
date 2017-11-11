@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:TRecyclerView="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_top" />
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <com.yidu.sevensecondmall.views.adapter.MuliTypeAdapter.CustomRecyclerView
+                android:id="@+id/custom_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                TRecyclerView:hasContext="true" />
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                android:id="@+id/icon_share"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="80dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/share_drawable"
+                android:gravity="center"
+                android:text="@string/icon_add_more_vip"
+                android:textColor="@color/app_theme"
+                android:textSize="26sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+</LinearLayout>

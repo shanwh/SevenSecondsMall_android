@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/base_toolbar"/>
+    <include layout="@layout/toolbar_line"/>
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent" android:visibility="visible"
+        android:layout_height="48dp"
+        android:background="@color/colorLightRedTr">
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mar_15"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="VIP申请"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/mar_15"
+            android:text="编辑"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/colorHomeBackground" />
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/white"-->
+    <!--android:padding="@dimen/mar_15"-->
+    <!--android:text="请您填写相关信息"-->
+    <!--android:textColor="@color/colorTextGray" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/style_tv_request"
+            android:text="团队名称" />
+
+        <EditText
+            android:id="@+id/et_name"
+            style="@style/style_et_request"
+            android:layout_toRightOf="@+id/tv_name"
+            android:hint="请输入团队名称"
+            android:text="1"
+            android:textColor="@color/colorGray2"
+            android:textCursorDrawable="@null" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_connect"
+            style="@style/style_tv_request"
+            android:layout_width="@dimen/mar_90"
+            android:gravity="center"
+            android:text="姓名" />
+
+        <EditText
+            android:id="@+id/et_connect"
+            style="@style/style_et_request"
+            android:layout_toRightOf="@+id/tv_connect"
+            android:enabled="false"
+            android:textColor="@color/colorGray2"
+            android:textCursorDrawable="@null" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_phone"
+            style="@style/style_tv_request"
+            android:layout_width="@dimen/mar_90"
+            android:gravity="center"
+            android:text="联系电话" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            style="@style/style_et_request"
+            android:inputType="phone"
+            android:layout_toRightOf="@+id/tv_phone"
+            android:hint="请输入手机号"
+            android:textColor="@color/colorGray2"
+            android:textCursorDrawable="@null" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_code"
+            style="@style/style_tv_request"
+            android:text="验证码    " />
+
+        <EditText
+            android:id="@+id/et_code"
+            style="@style/style_et_request"
+            android:layout_toRightOf="@+id/tv_code"
+            android:hint="请输入验证码"
+            android:textColor="@color/colorGray2"
+            android:textCursorDrawable="@null" />
+
+        <TextView
+            android:id="@+id/get_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/mar_5"
+            android:background="@drawable/button_bg"
+            android:paddingBottom="@dimen/mar_3"
+            android:paddingLeft="@dimen/mar_5"
+            android:paddingRight="@dimen/mar_5"
+            android:paddingTop="@dimen/mar_3"
+            android:text="发送验证码"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_address_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_address_id"
+            style="@style/style_tv_request"
+            android:layout_width="@dimen/mar_90"
+            android:gravity="center"
+            android:text="所属区域" />
+
+        <TextView
+            android:id="@+id/et_address_id"
+            style="@style/style_et_request"
+            android:layout_toRightOf="@+id/tv_address_id"
+            android:textColor="@color/colorGray2"
+            android:textCursorDrawable="@null" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_address"
+            style="@style/style_tv_request"
+            android:layout_width="@dimen/mar_90"
+            android:gravity="center"
+            android:text="具体位置" />
+
+        <EditText
+            android:id="@+id/et_address"
+            style="@style/style_et_request"
+            android:layout_toRightOf="@+id/tv_address"
+            android:hint="请输入具体位置信息"
+            android:textColor="@color/colorGray2" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/mar_15"
+        android:text="注：营业地址一经确认不能再次修改"
+        android:textColor="@color/light_red" />
+
+    <LinearLayout
+        android:id="@+id/ll_agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tip"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/mar_45"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_choose"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="@dimen/mar_10"
+            android:src="@drawable/icon_agree" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="我已阅读并同意DING商城" />
+
+        <TextView
+            android:id="@+id/tv_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="《VIP服务协议》"
+            android:textColor="@color/colorBlueText" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_pay_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mar_5"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/play_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/mar_15"
+            android:text="支付金额" />
+
+        <TextView
+            android:id="@+id/play_tip2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/play_tip"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:padding="@dimen/mar_7"
+            android:text="VIP服务费"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_order_fee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/play_tip2"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/mar_10"
+            android:text="1000元"
+            android:textColor="@color/light_red"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mar_90"
+        android:layout_marginRight="@dimen/mar_90"
+        android:layout_marginTop="@dimen/mar_20"
+        android:background="@drawable/to_buy_bg"
+        android:gravity="center"
+        android:padding="@dimen/mar_15"
+        android:text="下一步"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

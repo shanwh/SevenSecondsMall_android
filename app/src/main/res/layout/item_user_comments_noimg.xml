@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/mar_7"
+    android:paddingLeft="@dimen/mar_5"
+    android:paddingRight="@dimen/mar_5"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:paddingBottom="@dimen/mar_10"
+        >
+
+        <ImageView
+            android:id="@+id/iv_headimg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="9dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:id="@+id/tv_userlinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/iv_headimg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:text="448***dfdf"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_headimg"
+                    android:layout_marginTop="9dp"
+                    android:text="评分"
+                    android:textColor="@color/colorGray"
+                    android:textSize="12sp" />
+
+                <io.techery.properratingbar.ProperRatingBar
+                    android:id="@+id/rating_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/tv_userlinear"
+                    android:layout_below="@id/iv_headimg"
+                    android:layout_marginTop="3dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:prb_symbolicTick="★"
+                    app:prb_symbolicTickNormalColor="@android:color/darker_gray"
+                    app:prb_symbolicTickSelectedColor="@color/colorIconYellow"
+                    app:prb_totalTicks="5" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_ime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="@dimen/margin_size_10"
+            android:layout_marginTop="17dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"
+            tools:text="2017-05-06" />
+
+
+        <!-- <RatingBar
+             android:id="@+id/rating_bar"
+             style="?android:attr/ratingBarStyleSmall"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@id/tv_username"
+             android:layout_below="@id/iv_headimg"
+             android:layout_marginTop="11dp"
+             android:isIndicator="true"
+             android:progressDrawable="@drawable/rating_bar"
+             android:max="5"
+             android:numStars="5"
+             android:stepSize="1" />
+     -->
+        <TextView
+            android:id="@+id/tv_goodscomments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_userlinear"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:text="这商品棒极了"
+            android:textColor="@color/colorHint"
+            android:textSize="12dp" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_time"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignLeft="@id/tv_goodscomments"-->
+        <!--android:layout_below="@id/tv_goodscomments"-->
+        <!--android:layout_marginTop="12dp"-->
+        <!--android:text="评价时间：2016-6-15 19:33:47"-->
+        <!--android:textColor="@color/colorGray"-->
+        <!--android:textSize="12sp" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_goodsspecs"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignLeft="@id/tv_time"-->
+        <!--android:layout_below="@id/tv_time"-->
+        <!--android:layout_marginRight="25dp"-->
+        <!--android:layout_marginTop="12dp"-->
+        <!--android:text="尺码:L"-->
+        <!--android:textColor="@color/colorGray"-->
+        <!--android:textSize="10sp" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_goods_sub_specs"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/tv_time"-->
+        <!--android:layout_marginTop="12dp"-->
+        <!--android:layout_toRightOf="@id/tv_goodsspecs"-->
+        <!--android:text="颜色:买打击房价的四方街"-->
+        <!--android:textColor="@color/colorGray"-->
+        <!--android:textSize="10sp" />-->
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/img_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_goodscomments"
+            android:layout_marginTop="@dimen/margin_size_10" />
+
+    </RelativeLayout>
+</RelativeLayout>

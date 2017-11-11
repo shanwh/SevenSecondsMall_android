@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/shopgoods_list"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" />
+
+
+        <RelativeLayout
+            android:id="@+id/error"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_net"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/wangluo"
+                android:layout_centerInParent="true"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:id="@+id/tv_net"
+                android:layout_below="@id/iv_net"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:text="网络连接失败，请检查网络!"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

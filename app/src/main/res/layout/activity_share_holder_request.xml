@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<include layout="@layout/base_toolbar"/>
+    <include layout="@layout/toolbar_line"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent" android:visibility="gone"
+        android:layout_height="48dp"
+        android:background="@color/light_red">
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mar_15"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="申请升级"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_connect"
+            style="@style/style_tv_request"
+            android:layout_width="@dimen/mar_90"
+            android:gravity="center"
+            android:text="公司名称" />
+
+        <EditText
+            android:id="@+id/et_connect"
+            style="@style/style_et_request"
+            android:layout_toRightOf="@+id/tv_connect"
+            android:hint="请输入公司名称"
+            android:textColor="@color/colorGray2"
+            android:textCursorDrawable="@null" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_num"
+            style="@style/style_tv_request"
+            android:layout_width="@dimen/mar_90"
+            android:gravity="center"
+            android:text="营业执照注册号" />
+
+        <EditText
+            android:id="@+id/et_num"
+            style="@style/style_et_request"
+            android:inputType="phone"
+            android:layout_toRightOf="@+id/tv_num"
+            android:hint="请输入营业执照注册号"
+            android:textColor="@color/colorGray2"
+            android:textCursorDrawable="@null" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_address_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/style_tv_request"
+            android:layout_width="@dimen/mar_90"
+            android:gravity="center"
+            android:text="法人姓名" />
+
+        <EditText
+            android:id="@+id/et_name"
+            style="@style/style_et_request"
+            android:layout_toRightOf="@+id/tv_name"
+            android:hint="请输入法人姓名"
+            android:textColor="@color/colorGray2" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_phone"
+            style="@style/style_tv_request"
+            android:layout_width="@dimen/mar_90"
+            android:gravity="center"
+            android:text="联系电话" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            style="@style/style_et_request"
+            android:layout_toRightOf="@+id/tv_phone"
+            android:hint="请输入联系电话"
+            android:textColor="@color/colorGray2" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mar_90"
+        android:layout_marginRight="@dimen/mar_90"
+        android:layout_marginTop="@dimen/mar_20"
+        android:background="@drawable/to_buy_bg"
+        android:gravity="center"
+        android:padding="@dimen/mar_15"
+        android:text="下一步"
+        android:textColor="@color/white" />
+</LinearLayout>

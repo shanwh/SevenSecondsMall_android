@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/base_toolbar"/>
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" android:visibility="gone"
+        android:background="@color/light_red">
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mar_15"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的DING宝"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="@dimen/mar_15">
+
+        <ImageView
+            android:layout_width="@dimen/mar_15"
+            android:layout_height="@dimen/mar_15"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_q" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="DING宝规则" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bubble_bg_180_red">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="DING宝"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_ding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/mar_5"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:id="@+id/ll_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/mar_15"
+            android:background="@drawable/alertdiag_bg2"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/mar_13"
+            android:paddingLeft="@dimen/mar_25"
+            android:paddingRight="@dimen/mar_25"
+            android:paddingTop="@dimen/mar_13">
+
+            <ImageView
+                android:layout_width="@dimen/mar_15"
+                android:layout_height="@dimen/mar_15"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/mar_5"
+                android:src="@drawable/icon_b" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DING宝商城"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_money_ex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mar_15"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/mar_15"
+            android:background="@drawable/alertdiag_bg2"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/mar_13"
+            android:paddingLeft="@dimen/mar_25"
+            android:paddingRight="@dimen/mar_25"
+            android:paddingTop="@dimen/mar_13">
+
+            <ImageView
+                android:layout_width="@dimen/mar_15"
+                android:layout_height="@dimen/mar_15"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/mar_5"
+                android:src="@drawable/icon_m" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DING宝明细"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

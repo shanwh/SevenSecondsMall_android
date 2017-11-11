@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/mar_15">
+
+        <ImageView
+            android:id="@+id/iv_goods"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:contentDescription="美富特美容仪"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_loading_pic" />
+
+        <LinearLayout
+            android:id="@+id/tv_content"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_goods">
+
+            <TextView
+                android:id="@+id/tv_goods_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/iv_price"
+                android:layout_marginRight="@dimen/mar_5"
+                android:layout_marginLeft="@dimen/mar_15"
+                android:text="美富特美容仪" />
+
+            <TextView
+                android:id="@+id/tv_meal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_goods_name"
+                android:layout_marginLeft="@dimen/mar_15"
+                android:layout_marginTop="@dimen/margin_size_10"
+                android:layout_marginRight="@dimen/mar_5"
+                android:layout_toLeftOf="@+id/goodscount"
+                android:text="套餐分类:套餐A"
+                android:textSize="11sp" />
+
+
+
+            <TextView
+                android:id="@+id/goodscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/mar_15"
+                android:layout_marginTop="@dimen/margin_size_10"
+                android:layout_marginRight="@dimen/mar_5"
+                android:layout_below="@+id/tv_price"
+                android:text="x1" />
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

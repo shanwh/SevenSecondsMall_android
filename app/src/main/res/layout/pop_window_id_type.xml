@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:layout_marginLeft="@dimen/mar_25"
+    android:layout_marginRight="@dimen/mar_25"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/tv_pub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape"
+        android:padding="@dimen/mar_13"
+        android:text="对公账户"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_per"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape"
+        android:padding="@dimen/mar_13"
+        android:text="对私账户"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/mar_10"
+        />
+</LinearLayout>

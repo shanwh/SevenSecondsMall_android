@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/light_red">
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mar_15"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="成为会员"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mar_5"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/style_tv_request"
+            android:text="团队名称" />
+
+        <EditText
+            android:id="@+id/et_name"
+            style="@style/style_et_request"
+            android:layout_toRightOf="@+id/tv_name"
+            android:enabled="false"
+            android:hint="请输入团队名称"
+            android:textColor="@color/colorGray2"
+            android:textCursorDrawable="@null" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_address"
+            style="@style/style_tv_request"
+            android:text="具体位置" />
+
+        <EditText
+            android:id="@+id/et_address"
+            style="@style/style_et_request"
+            android:layout_toRightOf="@+id/tv_address"
+            android:enabled="false"
+            android:hint="请输入具体位置信息"
+            android:textColor="@color/colorGray2"
+            android:textCursorDrawable="@null" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mar_5"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_fre"
+            style="@style/style_tv_request"
+            android:text="入驻费用" />
+
+        <TextView
+            android:id="@+id/et_fre"
+            style="@style/style_et_request"
+            android:layout_marginRight="@dimen/mar_15"
+            android:layout_toRightOf="@+id/tv_fre"
+            android:gravity="right"
+            android:hint=""
+            android:text="¥0.01" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_gift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_gift"
+            style="@style/style_tv_request"
+            android:text="选择礼品" />
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@+id/tv_gift" />
+
+        <TextView
+            android:id="@+id/et_gift"
+            style="@style/style_et_request"
+            android:layout_marginLeft="@dimen/mar_5"
+            android:layout_toLeftOf="@+id/if_tv1"
+            android:layout_toRightOf="@+id/iv"
+            android:hint=""
+            android:maxLines="1"
+            tools:text="礼品1" />
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/if_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/mar_15"
+            android:rotation="180"
+            android:text="@string/back"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_gif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_receive_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_receive_address"
+            style="@style/style_tv_request"
+            android:text="收货地址" />
+
+        <TextView
+            android:id="@+id/et_receive_address"
+            style="@style/style_et_request"
+            android:layout_toLeftOf="@+id/if_tv2"
+            android:layout_toRightOf="@+id/tv_receive_address"
+            android:gravity="right"
+            android:hint=""
+            android:text="" />
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/if_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/mar_15"
+            android:rotation="180"
+            android:text="@string/back"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/rl_pay_type"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/white">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_pay_type"-->
+    <!--style="@style/style_tv_request"-->
+    <!--android:text="支付方式" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/et_pay_type"-->
+    <!--style="@style/style_et_request"-->
+    <!--android:layout_toRightOf="@+id/tv_pay_type"-->
+    <!--android:layout_toLeftOf="@+id/if_tv3"-->
+    <!--android:text="支付宝"-->
+    <!--android:gravity="right"-->
+    <!--android:hint="" />-->
+
+    <!--<com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView-->
+    <!--android:id="@+id/if_tv3"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginRight="@dimen/mar_15"-->
+    <!--android:rotation="180"-->
+    <!--android:text="@string/back"-->
+    <!--android:textSize="20sp" />-->
+    <!--</RelativeLayout>-->
+
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mar_90"
+        android:layout_marginRight="@dimen/mar_90"
+        android:layout_marginTop="@dimen/mar_20"
+        android:background="@drawable/to_buy_bg"
+        android:gravity="center"
+        android:padding="@dimen/mar_15"
+        android:text="下一步"
+        android:textColor="@color/white" />
+</LinearLayout>

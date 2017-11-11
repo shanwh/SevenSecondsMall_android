@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/alertdiag_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确认转让"
+        android:textColor="@color/app_theme"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="@dimen/mar_15"
+        android:layout_marginBottom="@dimen/mar_15"
+    />
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/mar_15"
+        android:layout_marginRight="@dimen/mar_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定以金额"
+            android:textSize="15sp"
+            android:textColor="@color/colorBottomBlack"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorLightRed"
+            android:text="¥"
+            android:textSize="15sp"
+
+            />
+
+        <EditText
+            android:id="@+id/et"
+            android:minWidth="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorLightRed"
+            android:text=""
+            android:textSize="14sp"
+            android:inputType="numberDecimal"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="转让此订单?"
+            android:textSize="15sp"
+            android:textColor="@color/colorBottomBlack"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/mar_15"
+        android:layout_marginTop="@dimen/mar_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#919191"
+            android:text="平均参考价："
+            android:textSize="@dimen/text_size_13sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_reference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_theme"
+            android:text=""
+            android:textSize="@dimen/text_size_13sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#919191"
+            android:text="(仅供参考)"
+            android:textSize="@dimen/text_size_13sp"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/mar_15"
+        android:layout_marginTop="@dimen/mar_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#919191"
+            android:text="转让成功，将收取"
+            android:textSize="11sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_theme"
+            android:text="2%"
+            android:textSize="11sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#919191"
+            android:text="手续费"
+            android:textSize="11sp"
+            />
+
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/mar_10"
+        android:layout_above="@id/ll_bottom_tab"
+        android:background="#337c7c7c" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mar_15"
+        android:layout_marginBottom="@dimen/mar_15"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape_while"
+            android:paddingLeft="@dimen/mar_15"
+            android:paddingRight="@dimen/mar_15"
+            android:paddingTop="@dimen/mar_7"
+            android:paddingBottom="@dimen/mar_7"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/app_theme"
+            android:text="取消"
+            />
+
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:paddingLeft="@dimen/mar_15"
+            android:paddingRight="@dimen/mar_15"
+            android:paddingTop="@dimen/mar_7"
+            android:paddingBottom="@dimen/mar_7"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="确认"
+            android:layout_marginLeft="@dimen/mar_25"
+
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

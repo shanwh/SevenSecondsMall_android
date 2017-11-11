@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RatioLayout">
+        <attr name="ratio" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="horizontalSpacing" format="dimension"/>
+        <attr name="verticalSpacing" format="dimension"/>
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr name="debugDraw" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="FlowLayout_LayoutParams">
+        <attr name="layout_newLine" format="boolean"/>
+        <attr name="layout_horizontalSpacing" format="dimension"/>
+        <attr name="layout_verticalSpacing" format="dimension"/>
+    </declare-styleable>
+
+
+    <!-- 飘心动画自定义的属性 -->
+    <declare-styleable name="HeartLayout">
+        <attr name="initX" format="dimension"/>
+        <attr name="initY" format="dimension"/>
+        <attr name="xRand" format="dimension"/>
+        <attr name="animLengthRand" format="dimension"/>
+        <attr name="xPointFactor" format="dimension"/>
+        <attr name="animLength" format="dimension"/>
+        <attr name="heart_width" format="dimension"/>
+        <attr name="heart_height" format="dimension"/>
+        <attr name="bezierFactor" format="integer"/>
+        <attr name="anim_duration" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="TRecyclerView">
+        <attr name="isReverse" format="boolean" />
+        <attr name="isRefreshable" format="boolean" />
+        <attr name="itemType" format="reference" />
+        <attr name="headType" format="reference" />
+        <attr name="footType" format="reference" />
+        <attr name="layoutMangerType" format="integer" />
+        <attr name="layoutMangerCount" format="integer" />
+        <attr name="layoutMangerOrientation" format="integer" />
+        <attr name="hasContext" format="boolean" />
+        <attr name="isWrapContent" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color"/>
+        <attr name="roundProgressColor" format="color"/>
+        <attr name="roundWidth" format="dimension"/>
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="max" format="integer"/>
+        <attr name="de" format="integer"/>
+        <attr name="textIsDisplayable" format="boolean"/>
+        <attr name="style">
+            <enum name="STROKE" value="0"/>
+            <enum name="FILL" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="bitmapWave">
+        <attr name="backbitmap" format="reference"/>
+        <attr name="overColor" format="color"/>
+
+    </declare-styleable>
+
+    <!-- 齿轮自定义的属性 -->
+    <declare-styleable name="GearView">
+        <attr name="isCenterText" format="boolean"/>
+        <attr name="innerCircle1" format="boolean"/>
+        <attr name="innerCircle2" format="boolean"/>
+        <attr name="bottomPic" format="reference"/>
+        <attr name="coverPic" format="reference"/>
+    </declare-styleable>
+
+    <!--物流自定义圆-->
+    <declare-styleable name="CircleInterCircleView">
+        <attr name="OutCircleWidth" format="dimension" />
+        <attr name="InterCircleWidth" format="dimension" />
+        <attr name="OutCircleColor" format="color" />
+        <attr name="InterCircleColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color"/>
+        <attr name="pstsUnderlineColor" format="color"/>
+        <attr name="pstsDividerColor" format="color"/>
+        <attr name="pstsIndicatorHeight" format="dimension"/>
+        <attr name="pstsUnderlineHeight" format="dimension"/>
+        <attr name="pstsDividerPadding" format="dimension"/>
+        <attr name="pstsTabPaddingLeftRight" format="dimension"/>
+        <attr name="pstsScrollOffset" format="dimension"/>
+        <attr name="pstsTabBackground" format="reference"/>
+        <attr name="pstsTabSelectedBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean"/>
+        <attr name="pstsTextAllCaps" format="boolean"/>
+    </declare-styleable>
+
+</resources>

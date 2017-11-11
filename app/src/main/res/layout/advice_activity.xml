@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include android:visibility="gone"
+        layout="@layout/title_head_layout"/>
+
+    <include layout="@layout/base_toolbar"/>
+    <include layout="@layout/toolbar_line"/>
+    <EditText
+        android:id="@+id/advice_edit"
+        android:layout_height="183dp"
+        android:layout_width="match_parent"
+        android:hint="亲,想说什么都可以"
+        android:gravity="top"
+        android:paddingTop="18dp"
+        android:paddingLeft="10dp"
+        android:background="@color/white"
+        android:textSize="12sp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/grid_linear"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="13sp"
+                android:layout_marginLeft="@dimen/margin_size_10"
+                android:text="@string/icon_img"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/colorHint"
+                android:text="添加图片更能说明问题哦~"/>
+
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="134dp"
+            android:layout_marginLeft="5dp"
+            android:horizontalSpacing="3dp"
+            android:layout_marginTop="@dimen/margin_size_10"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:verticalSpacing="5dp" >
+        </GridView>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_height="wrap_content"
+        android:layout_width="180dp"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_edittext"
+        android:layout_gravity="center_horizontal"
+        android:text="提交"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

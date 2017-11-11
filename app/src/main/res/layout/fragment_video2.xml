@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_top" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:background="#EFEFEF"
+        android:gravity="center"
+        android:text="DING网宣传视频" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/fl_video"
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:background="@color/black">
+
+            <ImageView
+                android:id="@+id/iv_scale"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                android:id="@+id/if_tv_video_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/icon_brand"
+                android:textColor="@color/colorPlayBtn"
+                android:textSize="45sp" />
+
+            <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+                android:id="@+id/if_tv_video_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/icon_play"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+
+        </FrameLayout>
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="2dp" />-->
+
+        <!--<FrameLayout-->
+            <!--android:id="@+id/fl_video1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="155dp"-->
+            <!--android:background="@color/black">-->
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_scale1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:scaleType="fitXY" />-->
+            <!--<com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView-->
+                <!--android:id="@+id/if_tv_video_bg1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:text="@string/icon_brand"-->
+                <!--android:textColor="@color/colorPlayBtn"-->
+                <!--android:textSize="45sp" />-->
+
+            <!--<com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView-->
+                <!--android:id="@+id/if_tv_video_icon1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:text="@string/icon_play"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="25sp" />-->
+
+
+        <!--</FrameLayout>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="2dp" />-->
+
+        <!--<FrameLayout-->
+            <!--android:id="@+id/fl_video3"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="155dp"-->
+            <!--android:background="@color/black">-->
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_scale3"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:scaleType="fitXY" />-->
+
+            <!--<com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView-->
+                <!--android:id="@+id/if_tv_video_bg3"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:text="@string/icon_brand"-->
+                <!--android:textColor="@color/colorPlayBtn"-->
+                <!--android:textSize="45sp" />-->
+
+            <!--<com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView-->
+                <!--android:id="@+id/if_tv_video_icon3"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:text="@string/icon_play"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="25sp" />-->
+
+
+        <!--</FrameLayout>-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

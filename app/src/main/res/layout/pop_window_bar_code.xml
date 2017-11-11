@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/alertdiag_bg"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mar_15"
+        android:layout_gravity="center"
+        android:text="识别到条形码"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/app_theme"
+        android:paddingTop="@dimen/mar_7"
+        android:paddingBottom="@dimen/mar_7"
+        />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:src="@drawable/icon_identification"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/mar_15"
+        android:layout_marginBottom="@dimen/mar_25"
+        />
+
+    <TextView
+        android:id="@+id/code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:lineSpacingExtra="@dimen/mar_3"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="6922711079066"
+        />
+
+    <TextView
+        android:id="@+id/brand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="@dimen/mar_10"
+        android:lineSpacingExtra="@dimen/mar_3"
+        android:gravity="center"
+        android:text="商品品牌"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="@dimen/mar_10"
+        android:lineSpacingExtra="@dimen/mar_3"
+        android:gravity="center"
+        android:text="商品名称"
+        />
+
+    <TextView
+        android:id="@+id/unspsc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="@dimen/mar_10"
+        android:lineSpacingExtra="@dimen/mar_3"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/mar_15"
+        android:layout_marginRight="@dimen/mar_15"
+        android:text="50201708 (食品、饮料和烟草>>饮料>>咖啡和茶>>咖啡饮料)"
+        />
+
+
+
+    <TextView
+        android:id="@+id/origincountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="@dimen/mar_10"
+        android:lineSpacingExtra="@dimen/mar_3"
+        android:gravity="center"
+        android:text="产地：中国上海市"
+        />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="@dimen/mar_10"
+        android:lineSpacingExtra="@dimen/mar_3"
+        android:gravity="center"
+        android:text="155克"
+        />
+
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:lineSpacingExtra="@dimen/mar_3"
+        android:text="价格：99"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/app_theme"
+        android:layout_marginTop="@dimen/mar_10"
+        android:layout_marginBottom="@dimen/mar_25"
+        />
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_next"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/button_shape"-->
+        <!--android:paddingLeft="@dimen/mar_45"-->
+        <!--android:paddingRight="@dimen/mar_45"-->
+        <!--android:paddingTop="@dimen/mar_10"-->
+        <!--android:paddingBottom="@dimen/mar_10"-->
+        <!--android:layout_marginTop="@dimen/mar_25"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:text="立即实名"-->
+        <!--android:layout_marginBottom="@dimen/mar_35"-->
+        <!--/>-->
+</LinearLayout>

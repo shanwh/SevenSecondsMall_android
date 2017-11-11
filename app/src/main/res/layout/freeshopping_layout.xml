@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:TabLayout="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/base_toolbar"/>
+    <include layout="@layout/toolbar_line"/>
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent" android:visibility="gone"
+        android:layout_height="48dp"
+        android:background="@color/light_red">
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mar_15"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="赠品进度"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_assignment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mar_15"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:text="转让区"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="48dp">
+
+        <com.yidu.sevensecondmall.views.widget.iconfonts.IconFontTextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="@dimen/mar_5"
+            android:layout_marginRight="@dimen/mar_5"
+             android:text="@string/icon_capacity"
+            android:layout_gravity="center"
+            android:textColor="#06cc7d"
+             android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的加速齿轮值："
+            android:textSize="15sp"
+            android:textColor="@color/colorBottomBlack"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorLightRed"
+            android:textSize="15sp"
+            android:text="0"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/app_theme"
+            android:text="点击使用DING宝转换？"
+            android:layout_marginLeft="@dimen/mar_5"
+            />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:progress="0"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/pb_ho"
+        android:visibility="gone" />
+
+    <android.support.design.widget.TabLayout
+        android:visibility="visible"
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_gravity="top"
+        android:background="@color/white"
+        TabLayout:tabContentStart="2dp"
+        TabLayout:tabIndicatorColor="@color/app_theme"
+        TabLayout:tabIndicatorHeight="2dp"
+        TabLayout:tabMode="scrollable"
+        TabLayout:tabSelectedTextColor="@color/app_theme"
+        TabLayout:tabTextAppearance="@style/fragment_tab_tv_circles"
+        TabLayout:tabTextColor="@color/colorBottomBlack" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_circles"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <!--<com.yidu.sevensecondmall.views.adapter.MuliTypeAdapter.CustomRecyclerView-->
+        <!--android:id="@+id/custom_rv"-->
+        <!--TRecycleView:hasContext="true"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_width="match_parent"/>-->
+
+</LinearLayout>
